@@ -1,0 +1,373 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using Newtonsoft.Json;
+using System.Collections;
+using System.Collections.Specialized;
+using System.Runtime.InteropServices;
+using System.Globalization;
+using System.Runtime.Versioning;
+
+namespace CustomTraceListener
+{
+    public class Tracer : TraceListener, ITracer
+    {
+        #region Fields & Properties
+        private TraceLevel level = TraceLevel.Off;
+        private int appId = -1;
+        private string logger = string.Empty;
+        private string centralLoggerServiceUrl = string.Empty;
+
+        public TraceLevel Level
+        {
+            get { return level; }
+            set { level = value; }
+        }
+        public int AppId
+        {
+            get
+            {
+                if (appId >= 0) return appId;
+                foreach (DictionaryEntry key in Attributes)
+                {
+                    if ((key.Key as string).Equals("appid", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        int valOut;
+                        if (int.TryParse(key.Value as string, out valOut))
+                        {
+                            appId = valOut;
+                            return appId;
+                        }
+                    }
+                }
+                return -1;
+            }
+            set { appId = value; }
+        }
+        public string Logger
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(logger)) return logger;
+                foreach (DictionaryEntry key in Attributes)
+                {
+                    if ((key.Key as string).Equals("logger", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        logger = key.Value as string;
+                        return logger;
+                    }
+                }
+                return string.Empty;
+            }
+            set { logger = value; }
+        }
+        public string CentralLoggerServiceUrl
+        {
+            get
+            {
+                if (!string.IsNullOrEmpty(centralLoggerServiceUrl)) return centralLoggerServiceUrl;
+                foreach (DictionaryEntry key in Attributes)
+                {
+                    if ((key.Key as string).Equals("CentralLoggerServiceUrl", StringComparison.InvariantCultureIgnoreCase))
+                    {
+                        centralLoggerServiceUrl = key.Value as string;
+                        return centralLoggerServiceUrl;
+                    }
+                }
+                return string.Empty;
+            }
+            set { centralLoggerServiceUrl = value; }
+        }
+        #endregion
+
+        #region Constructors
+        public Tracer() { }
+
+        public Tracer(string name) : base(name) { }
+
+        protected override string[] GetSupportedAttributes()
+        {
+            return new string[] { "AppId", "Logger", "CentralLoggerServiceUrl" };
+        }
+        #endregion
+
+        #region Public Methods
+
+        #region Overridden TraceListener Methods
+
+        [ComVisible(false)]
+        public override void TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, int id, object data)
+        {
+            if (Filter != null && !Filter.ShouldTrace(eventCache, source, eventType, id, null, null, data as string, null))
+                return;
+
+            StringBuilder sb = new StringBuilder();
+            //sb.Append(WriteHeader(source, eventType, id));
+
+            if (data != null)
+                sb.AppendLine(data.ToString());
+
+            sb.Append(WriteFooter(eventCache));
+            TraceLine(ConvertEventTypeToTraceLevel(eventType), sb.ToString());
+        }
+
+        [ComVisible(false)]
+        public override void TraceData(TraceEventCache eventCache, String source, TraceEventType eventType, int id, params object[] data)
+        {
+            if (Filter != null && !Filter.ShouldTrace(eventCache, source, eventType, id, null, null, null, data))
+                return;
+
+            StringBuilder sb = new StringBuilder();
+            //sb.Append(WriteHeader(source, eventType, id));
+
+            if (data != null)
+            {
+                for (int i = 0; i < data.Length; i++)
+                {
+                    if (i != 0)
+                        sb.Append(", ");
+
+                    if (data[i] != null)
+                        sb.Append(data[i].ToString());
+                }
+                sb.Append("\n");
+            }
+
+            sb.Append(WriteFooter(eventCache));
+            TraceLine(ConvertEventTypeToTraceLevel(eventType), sb.ToString());
+        }
+
+        [ComVisible(false)]
+        public override void TraceEvent(TraceEventCache eventCache, String source, TraceEventType eventType, int id, string message)
+        {
+            if (Filter != null && !Filter.ShouldTrace(eventCache, source, eventType, id, message, null, null, null))
+                return;
+
+            StringBuilder sb = new StringBuilder();
+            //sb.Append(WriteHeader(source, eventType, id));
+
+            if (message != null)
+                sb.AppendLine(message);
+
+            sb.Append(WriteFooter(eventCache));
+            TraceLine(ConvertEventTypeToTraceLevel(eventType), sb.ToString());
+        }
+
+        [ComVisible(false)]
+        public override void TraceEvent(TraceEventCache eventCache, String source, TraceEventType eventType, int id, string format, params object[] args)
+        {
+            if (Filter != null && !Filter.ShouldTrace(eventCache, source, eventType, id, format, args, null, null))
+                return;
+
+            StringBuilder sb = new StringBuilder();
+            //sb.Append(WriteHeader(source, eventType, id));
+
+            if (args != null)
+                sb.AppendLine(String.Format(CultureInfo.InvariantCulture, format, args));
+            else
+                sb.AppendLine(format);
+
+            sb.Append(WriteFooter(eventCache));
+            TraceLine(ConvertEventTypeToTraceLevel(eventType), sb.ToString());
+        }
+
+        public override void Write(string message)
+        {
+#if TRACE
+            if (!string.IsNullOrEmpty(message))
+                TraceLine(TraceLevel.Verbose, message);
+#endif
+        }
+
+        public override void WriteLine(string message)
+        {
+#if TRACE
+            if (!string.IsNullOrEmpty(message))
+                TraceLine(TraceLevel.Verbose, message);
+#endif
+        }
+
+        #endregion
+
+        #region ITracer Methods Implementation
+
+        public void TraceError(string message)
+        {
+            if (CanTrace(TraceLevel.Error))
+                TraceLine(TraceLevel.Error, message);
+        }
+
+        public void TraceInfo(string message)
+        {
+            if (CanTrace(TraceLevel.Info))
+                TraceLine(TraceLevel.Info, message);
+        }
+
+        public void TraceWarning(string message)
+        {
+            if (CanTrace(TraceLevel.Warning))
+                TraceLine(TraceLevel.Warning, message);
+        }
+
+        #endregion
+
+        #endregion
+
+        #region Protected Methods
+
+        /// <summary>
+        /// Do not call this method. It will log whitespaces in the central log table.
+        /// If needed, use AppendIndent to add indent to message then call Write or WriteLine method to log it.
+        /// </summary>
+        [Obsolete]
+        protected override void WriteIndent()
+        {
+            NeedIndent = false;
+            for (int i = 0; i < IndentLevel; i++)
+            {
+                if (IndentSize == 4)
+                    Write("    ");
+                else {
+                    for (int j = 0; j < IndentSize; j++)
+                    {
+                        Write(" ");
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Use this method to format message with indent. It will not send log to Central Logging Api
+        /// </summary>
+        /// <returns></returns>
+        protected virtual string AppendIndent()
+        {
+            NeedIndent = false;
+            StringBuilder sb = new StringBuilder();
+            for (int i = 0; i < IndentLevel; i++)
+            {
+                if (IndentSize == 4)
+                    sb.Append("    ");
+                else {
+                    for (int j = 0; j < IndentSize; j++)
+                    {
+                        sb.Append(" ");
+                    }
+                }
+            }
+            return sb.ToString();
+        }
+
+        /// <summary>
+        /// Map event type to trace level
+        /// </summary>
+        /// <param name="eventType"></param>
+        /// <returns></returns>
+        protected virtual TraceLevel ConvertEventTypeToTraceLevel(TraceEventType eventType)
+        {
+            switch (eventType)
+            {
+                case TraceEventType.Critical:
+                case TraceEventType.Error: return TraceLevel.Error;
+                case TraceEventType.Warning: return TraceLevel.Warning;
+                case TraceEventType.Information: return TraceLevel.Info;
+                case TraceEventType.Resume:
+                case TraceEventType.Start:
+                case TraceEventType.Stop:
+                case TraceEventType.Suspend:
+                case TraceEventType.Transfer:
+                case TraceEventType.Verbose: return TraceLevel.Verbose;
+                default: return TraceLevel.Verbose;
+            }
+        }
+
+        protected virtual bool CanTrace(TraceLevel messageLevel)
+        {
+            return (int)messageLevel <= (int)Level;
+        }
+
+        #endregion
+
+        #region Private Methods
+        private void TraceLine(TraceLevel level, string message)
+        {
+            var logItem = new LogItem();
+            logItem.AppId = AppId;
+            logItem.Logger = Logger;
+            logItem.Level = level.ToString();
+            logItem.Message = message;
+            var messageLogItem = new MessageLotItem
+            {
+                log = logItem,
+                Message = "This is a test message",
+                IsSuccessful = true
+            };
+            var payload = JsonConvert.SerializeObject(messageLogItem);
+            PostMessage(payload);
+        }
+
+        private void PostMessage(string message)
+        {
+            Console.WriteLine($"Post message to {CentralLoggerServiceUrl}");
+            Console.WriteLine($"Message content:{message}");
+        }
+
+        private string WriteHeader(String source, TraceEventType eventType, int id)
+        {
+            return string.Format(CultureInfo.InvariantCulture, "{0} {1}: {2} : ", source, eventType.ToString(), id.ToString(CultureInfo.InvariantCulture));
+        }
+
+        [ResourceExposure(ResourceScope.None)]
+        [ResourceConsumption(ResourceScope.Machine, ResourceScope.Machine)]
+        private string WriteFooter(TraceEventCache eventCache)
+        {
+            if (eventCache == null)
+                return string.Empty;
+
+            StringBuilder sb = new StringBuilder();
+            IndentLevel++;
+            if (IsEnabled(TraceOptions.ProcessId))
+                sb.AppendLine("ProcessId=" + eventCache.ProcessId);
+
+            if (IsEnabled(TraceOptions.LogicalOperationStack))
+            {
+                sb.Append("LogicalOperationStack=");
+                Stack operationStack = eventCache.LogicalOperationStack;
+                bool first = true;
+                foreach (object obj in operationStack)
+                {
+                    if (!first)
+                        sb.Append(", ");
+                    else
+                        first = false;
+
+                    sb.Append(obj.ToString());
+                }
+                sb.AppendLine(string.Empty);
+            }
+
+            if (IsEnabled(TraceOptions.ThreadId))
+                sb.AppendLine("ThreadId=" + eventCache.ThreadId);
+
+            if (IsEnabled(TraceOptions.DateTime))
+                sb.AppendLine("DateTime=" + eventCache.DateTime.ToString("o", CultureInfo.InvariantCulture));
+
+            if (IsEnabled(TraceOptions.Timestamp))
+                sb.AppendLine("Timestamp=" + eventCache.Timestamp);
+
+            if (IsEnabled(TraceOptions.Callstack))
+                sb.AppendLine("Callstack=" + eventCache.Callstack);
+            IndentLevel--;
+            return sb.ToString();
+        }
+
+        private bool IsEnabled(TraceOptions opts)
+        {
+            return (opts & TraceOutputOptions) != 0;
+        }
+        #endregion
+    }
+}
