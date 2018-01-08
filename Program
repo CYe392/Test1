@@ -1,0 +1,58 @@
+using System;
+using System.Diagnostics;
+
+namespace CustomTraceListener.Test
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            ////Use static methods from System.Diagnostics.Trace, configured by app.config
+            Trace.TraceInformation("scenario 1: this is a info message");
+            Trace.TraceWarning("scenario 1: this is a warning message");
+            Trace.TraceError("scenario 1: this is an error message");
+
+            //Use ITracer methods from System.Diagnostics.Trace, configured by code 
+            var tracer1 = new CustomTraceListener.Tracer()
+            {
+                AppId = 12345,
+                Level = TraceLevel.Error,
+                Logger = "myLogger1",
+                CentralLoggerServiceUrl = @"http://centrallogger/api/log"
+            };
+
+            tracer1.TraceError("scenario 2: this is an error message from TraceError");
+            tracer1.TraceWarning("scenario 2: this is a warning message from TraceWarning");
+            tracer1.TraceInfo("scenario 2: this is a info message from TraceInfo");
+
+            //Use static methods from System.Diagnostics.Trace, configured by code 
+            Trace.Listeners.Add(new CustomTraceListener.Tracer("myListener", 12345, "myLogger", TraceEventType.Warning, @"http://logapi"));
+
+            Trace.TraceInformation("scenario 3: this is a info message");
+            Trace.TraceWarning("scenario 3: this is a warning message");
+            Trace.TraceError("scenario 3: this is an error message");
+
+
+            //Use static methods from System.Diagnostics.Trace, configured by code & app.config
+            //var traceSwitch = new TraceSwitch("mySwitch", null);
+            //var tracer2 = new CustomTraceListener.Tracer(traceSwitch);
+            //tracer2.TraceError("scenario 2: this is an error message from TraceError");
+            //tracer2.TraceWarning("scenario 2: this is a warning message from TraceWarning");
+            //tracer2.TraceInfo("scenario 2: this is a info message from TraceInfo");
+
+
+
+            //Initiate CustomTraceListener.Trace instance, configured by app.config
+
+
+            //Initiate CustomTraceListener.Trace instance, configured by code
+
+
+            //Use TraceSource, configured by app.config
+
+
+            //Use TraceSource, configured by code
+            Console.Read();
+        }
+    }
+}
