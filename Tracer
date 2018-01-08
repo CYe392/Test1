@@ -86,7 +86,22 @@ namespace CustomTraceListener
         #region Constructors
         public Tracer() { }
 
-        public Tracer(string name) : base(name) { }
+        public Tracer(string name, TraceFilter filter, int appId, string logger, string centralLoggerServiceUrl) : base(name)
+        {
+            this.Filter = filter;
+            this.appId = appId;
+            this.logger = logger;
+            this.centralLoggerServiceUrl = centralLoggerServiceUrl;
+        }
+
+        public Tracer(string name, TraceLevel level, int appId, string logger, string centralLoggerServiceUrl) : base(name)
+        {
+            //this.Filter = filter;
+            this.appId = appId;
+            this.logger = logger;
+            this.centralLoggerServiceUrl = centralLoggerServiceUrl;
+            this.level = level;
+        }
 
         protected override string[] GetSupportedAttributes()
         {
