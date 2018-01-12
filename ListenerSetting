@@ -1,0 +1,17 @@
+using System.Collections.Specialized;
+using System.Diagnostics;
+
+namespace Fisher.Utilities.CentralTraceListener.Model
+{
+    public class ListenerSetting
+    {
+        public string Name { get; set; }
+        public StringDictionary Attributes { get; set; }
+        public TraceFilter Filter { get; set; }
+
+        public ListenerSetting()
+        {
+            Attributes = new StringDictionary();
+        }
+    }
+}
