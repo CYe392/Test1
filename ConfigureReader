@@ -1,0 +1,196 @@
+using Fisher.Utilities.CentralTraceListener.Model;
+using System;
+using System.Configuration;
+using System.Diagnostics;
+using System.Linq;
+using System.Text.RegularExpressions;
+using System.Xml.Linq;
+
+namespace Fisher.Utilities.CentralTraceListener.Helper
+{
+    public class ConfigureReader
+    {
+        public static XDocument ReadConfig()
+        {
+            var configPath = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None).FilePath;
+            return XDocument.Load(configPath);
+        }
+
+        public static ListenerSetting FindTraceListenerConfig(string listenerName, string traceSourceName = null)
+        {
+            var config = ReadConfig();
+            var diagnosticsConfig = config.Element("configuration")?.Element("system.diagnostics");
+            if (diagnosticsConfig == null)
+                return null;
+
+            //Read SharedListeners tags
+            var sharedListeners = diagnosticsConfig.Element("sharedListeners");
+            var sharedListener =
+                sharedListeners?.Descendants("add")
+                    ?.FirstOrDefault(sl => sl.Attribute("name").Value == listenerName);
+
+            var switchFilterLevel = TraceLevel.Verbose;
+
+            XElement listenerSection;
+            if (string.IsNullOrEmpty(traceSourceName))
+            {
+                //Read <Listeners> under <Trace>
+                listenerSection =
+                    diagnosticsConfig.Element("trace")?.Element("listeners");
+            }
+            else
+            {
+                //Read <Listeners> under <Sources>
+                var sourceSection =
+                    diagnosticsConfig.Element("sources")?.Elements("source")
+                        ?.LastOrDefault(s => s.Attribute("name").Value == traceSourceName);
+                var switchName = sourceSection.Attribute("switchName")?.Value;
+                if (sourceSection == null || string.IsNullOrEmpty(switchName))
+                    listenerSection = null;
+                else
+                {
+                    listenerSection = sourceSection?.Element("listeners");
+                    //Read <switches> under <sources>
+                    var switchSetting =
+                        diagnosticsConfig.Element("switches")?.Descendants("add")
+                            ?.LastOrDefault(s => s.Attribute("name").Value == switchName);
+                    if (switchSetting != null)
+                    {
+                        var switchFilterValue = switchSetting.Attribute("value").Value;
+                        //If value is int value of TraceLevel enum
+                        if (Regex.IsMatch(switchFilterValue, "^[0-4]$"))
+                        {
+                            switchFilterLevel = (TraceLevel)(int.Parse(switchFilterValue));
+                        }
+                        else
+                        {
+                            //if value is string value of TraceLevel enum
+                            TraceLevel levelOutput;
+                            if (Enum.TryParse(switchFilterValue, out levelOutput))
+                            {
+                                switchFilterLevel = levelOutput;
+                            }
+                        }
+                    }
+                }
+            }
+
+            if (listenerSection == null)
+                return null;
+
+            var listener = FindTraceListenerFromSection(listenerSection, listenerName);
+
+            if (listener == null)
+                return null;
+
+            ListenerSetting listenerConfig;
+
+            if (IsOverWritten(listener))
+                //If the listener is overwritten, get attributes and filter from <Listeners> section
+                listenerConfig = ConvertToListenerSetting(listener);
+            else
+                //If the listener is referenced, get attributes and filter from <sharedListeners> section
+                listenerConfig = ConvertToListenerSetting(sharedListener);
+
+            //Compare switch level with listener filter level
+            listenerConfig.Filter = CalcListenerFilter(switchFilterLevel, listenerConfig.Filter);
+            return listenerConfig;
+        }
+
+        private static TraceFilter CalcListenerFilter(TraceLevel switchFilterLevel, TraceFilter listenerFilter)
+        {
+            SourceLevels convertedSourceLevel = switchFilterLevel == TraceLevel.Off
+                                                ? SourceLevels.Off
+                                                : (SourceLevels)(2 ^ ((int)switchFilterLevel + 1) - 1);
+
+            if (listenerFilter == null || listenerFilter is SourceFilter)
+            {
+                return new EventTypeFilter(convertedSourceLevel);
+            }
+
+            var listenerLevel = ((EventTypeFilter)listenerFilter).EventType;
+            SourceLevels finalFilterLevel;
+
+            if (convertedSourceLevel == SourceLevels.All)
+                finalFilterLevel = listenerLevel;
+            else if (listenerLevel == SourceLevels.All)
+                finalFilterLevel = convertedSourceLevel;
+            else
+            {
+                finalFilterLevel = (int)listenerLevel < (int)convertedSourceLevel
+                                    ? listenerLevel
+                                    : convertedSourceLevel;
+            }
+
+            return new EventTypeFilter(finalFilterLevel);
+        }
+
+        private static ListenerSetting ConvertToListenerSetting(XElement element)
+        {
+            if (element == null)
+                return null;
+
+            var config = new ListenerSetting();
+
+            config.Name = element.Attribute("name").Value;
+            element.Attributes()
+                .Where(a => a.Name.LocalName != "name").ToList()
+                    .ForEach(a => config.Attributes.Add(a.Name.LocalName, a.Value));
+
+            var filterElement = element.Descendants("filter").FirstOrDefault();
+            if (filterElement != null)
+            {
+                var filterType = filterElement.Attribute("type")?.Value;
+                var filterData = filterElement.Attribute("initializeData")?.Value;
+
+                if (filterType == typeof(EventTypeFilter).FullName)
+                {
+                    SourceLevels sourceLevelTest;
+                    if (Enum.TryParse(filterData, out sourceLevelTest))
+                    {
+                        config.Filter = new EventTypeFilter(sourceLevelTest);
+                    }
+                }
+                else if (filterType == typeof(SourceFilter).FullName)
+                {
+                    config.Filter = new SourceFilter(filterData);
+                }
+            }
+
+            return config;
+        }
+
+        private static XElement FindTraceListenerFromSection(XElement listenerSec, string listenerName)
+        {
+            if (listenerSec == null || listenerSec.LastNode == null)
+                return null;
+
+            var lastElement = listenerSec.LastNode as XElement;
+
+            while (lastElement != null)
+            {
+                if (lastElement.Name?.LocalName == "clear")
+                    break;
+                if (lastElement.Name?.LocalName == "remove" &&
+                    lastElement.Attribute("name")?.Value == listenerName)
+                    break;
+                if (lastElement.Name?.LocalName == "add" &&
+                    lastElement.Attribute("name")?.Value == listenerName)
+                {
+                    return lastElement;
+                }
+                lastElement = lastElement.PreviousNode as XElement;
+            }
+            return null;
+        }
+
+        private static bool IsOverWritten(XElement listener)
+        {
+            if (listener == null)
+                return false;
+            if (listener.Attributes().Count() == 1 && listener.FirstAttribute.Name.LocalName == "name")
+                return false;
+            return true;
+        }
+    }
+}
