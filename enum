@@ -1,0 +1,11 @@
+namespace Fisher.Utilities.CentralTraceListener
+{
+    public enum CentralLogLevel
+    {
+        DEBUG,
+        INFO,
+        WARN,
+        ERROR,
+        FATAL,
+    }
+}
