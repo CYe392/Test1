@@ -1,0 +1,208 @@
+using System;
+using System.Collections.Concurrent;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Security.Cryptography;
+using System.Text;
+using System.Threading;
+using System.Threading.Tasks;
+using log4net.Appender;
+using log4net.Core;
+using log4net.Util;
+
+namespace Fisher.Utilities.Logging
+{
+    /// <summary>
+    /// BufferingForwarding Log Appender for log4net. It has below additional functionalities
+    ///  1) Async
+    ///  2) Message flooding detection, auto suspending and auto resuming
+    ///  3) Duplicate message detection, auto surpressing and auto resuming
+    /// </summary>
+    public class AsyncBufferingForwardingAppender : BufferingForwardingAppender
+    {
+        private readonly Object _lock = new Object();
+        //private Stopwatch _watch = new Stopwatch();
+        private int _countLastPeriod = 0;
+        private int _currentCount = 0;
+        private bool _isFlodding = false;
+        private bool _floodMessageSend = false;
+        private DateTime _periodEndTime;
+        private ConcurrentDictionary<string, int> _messageHashCount;
+
+        /// <summary>
+        /// Maxinum number of logging events/messages per period to prevent flooding. If flooding is detected,
+        /// the logging will be suspended till new period starts.
+        /// </summary>
+        public int MaxEventsPerPeriod { get; set; }
+
+        /// <summary>
+        /// Maximum number of same messages per period. If same message shows up more than MaxSameEventsPerPeriod times,
+        /// the message will be suppressed till new period starts.
+        /// </summary>
+        /// 
+        public int MaxSameEventsPerPeriod { get; set; }
+
+        /// <summary>
+        /// The number of seconds per period for flooding detection.
+        /// </summary>
+        public int PeriodInSeconds { get; set; }
+
+        /// <summary>
+        /// Indicates whether to use async
+        /// </summary>
+        public bool UseAsync { get; set; }
+
+
+        public AsyncBufferingForwardingAppender()
+        {
+            MaxEventsPerPeriod = 400;
+            MaxSameEventsPerPeriod = 20;
+            PeriodInSeconds = 5;
+            UseAsync = true;
+        }
+
+        public override void ActivateOptions()
+        {
+            if (MaxEventsPerPeriod > 0)
+            {
+                _currentCount = 0;
+                StartNewFloodPeriod();
+            }
+
+            base.ActivateOptions();
+        }
+
+        private void StartNewFloodPeriod()
+        {
+            _countLastPeriod = _currentCount;
+            _currentCount = 0;
+            _isFlodding = false;
+            _periodEndTime = DateTime.Now.AddSeconds(PeriodInSeconds);
+            _floodMessageSend = false;
+
+            _messageHashCount = new ConcurrentDictionary<string, int>();
+        }
+
+        private int GetMessageHashCount(string hash)
+        {
+            if (_messageHashCount.ContainsKey(hash))
+            {
+                _messageHashCount[hash]++;
+            }
+            else
+            {
+                _messageHashCount.TryAdd(hash, 1);
+            }
+            return _messageHashCount[hash];
+        }
+
+        private string ComputeMessageHash(string msg)
+        {
+            using (var sha = SHA256.Create())
+            {
+                var computedHash = sha.ComputeHash(Encoding.Unicode.GetBytes(msg));
+                return Convert.ToBase64String(computedHash);
+            }
+        }
+
+        protected override void SendBuffer(LoggingEvent[] eventsOrig)
+        {
+            if (eventsOrig == null || eventsOrig.Length == 0)
+                return;
+
+            List<LoggingEvent> filteredEvents = new List<LoggingEvent>();
+            foreach (var evt in eventsOrig)
+            {
+                string msg = evt.RenderedMessage;
+                var hash = ComputeMessageHash(msg);
+                if (GetMessageHashCount(hash) <= MaxSameEventsPerPeriod)
+                {
+                    filteredEvents.Add(evt);
+                }
+            }
+            var events = filteredEvents.ToArray();
+
+            if (events.Length == 0)
+                return;
+
+            if (MaxEventsPerPeriod > 0)
+            {
+                _currentCount += events.Length;
+
+                if (DateTime.Now > _periodEndTime)
+                {
+                    // start new cycle
+                    if (_isFlodding)
+                        LogLog.Warn(this.GetType(), "ErrorLog resume after flooding.");
+
+                    StartNewFloodPeriod();
+                }
+
+                if (_currentCount > MaxEventsPerPeriod)
+                {
+                    //flodding
+                    _isFlodding = true;
+
+                    //emmit warning message
+                    if (!_floodMessageSend)
+                    {
+                        string floddingMessage = string.Format(
+                            "ErrorLog Flooding detected! Messages gets discarded! Received {0} msgs within {1} seconds.",
+                            _currentCount, PeriodInSeconds);
+                        //LogLog.Error(floddingMessage);
+
+                        LoggingEvent logEvent;
+                        LoggingEventData logData;
+                        logData = new LoggingEventData();
+                        logData.TimeStamp = DateTime.Now;
+                        logData.Level = Level.Fatal;
+                        logData.Properties = new log4net.Util.PropertiesDictionary();
+                        logData.Properties["FI.AppId"] = events[0].Properties["FI.AppId"];
+                        logData.Properties["FI.ErrorNum"] = events[0].Properties["FI.ErrorNum"];
+                        logData.Properties["FI.MachineName"] = Environment.MachineName;
+                        logData.Properties["FI.ExeName"] = Environment.CommandLine;
+                        logData.ThreadName = Thread.CurrentThread.ManagedThreadId.ToString();
+                        logData.Message = floddingMessage;
+                        logEvent = new LoggingEvent(logData);
+
+                        if (UseAsync)
+                        {
+                            Task.Factory.StartNew(() =>
+                            {
+                                _SendBuffer(new LoggingEvent[] {logEvent});
+                            }, TaskCreationOptions.LongRunning);
+                        }
+                        else
+                        {
+                            _SendBuffer(new LoggingEvent[] { logEvent });
+                        }
+                        _floodMessageSend = true;
+                    }
+                    return;
+
+                } //endif isflodding
+            }
+
+            if (UseAsync)
+            {
+                Task logTask = Task.Factory.StartNew(() =>
+                {
+                    _SendBuffer(events);
+                }, TaskCreationOptions.LongRunning);
+            }
+            else
+            {
+                _SendBuffer(events);
+            }
+        }
+
+        protected void _SendBuffer(LoggingEvent[] events)
+        {
+            lock (_lock)
+            {
+                base.SendBuffer(events);
+            }
+        }
+
+    }
+}
