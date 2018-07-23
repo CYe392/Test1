@@ -1,0 +1,3809 @@
+	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn (Mountain View, CA) in August 2014.
+
+Interview
+
+2 telephonic followed by 6 in-house algo/design/coding interviews.
+- How to find if nodes in graph are exactly 1/2/3 edges apart. how would you distribute graph across machines.
+- Given set of characters and a string, find smallest substring which contains all characters.
+- Implement a delayed scheduler for jobs using pthread apis (mutex/cond_var)
+- You have bunch of numbers coming in, and a given a window size, how would you save numbers so that you can return number if present in window and provide average for current window.
+- Manager round: You are given bunch of machines with services running on them, how would you improve things. very vague design talk.
+- Reverse words in a string.
+- Implement decimal to roman and vice versa.
+Show Less
+
+Interview Questions
+
+2 person (one senior / one junior) interview panel system at LinkedIn is weird. It is interviewee's responsibility to manage time during interview.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Sep 8, 2014 Helpful (17)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 2 weeks. I interviewed at LinkedIn in September 2014.
+
+Interview
+
+I was contacted by a recruiter on LinkedIn, who later called me and informally discussed the position they were looking for and asked about my background. After this phone call, the recruiter scheduled an hour-long technical phone interview with two software engineers based on my availability, which happened to be 2 weeks after this initial phone call from the recruiter.
+The technical phone screen was conducted using collabedit. First, the interviewer… 
+Show More
+
+Interview Questions
+
+Implement double pow(double a, int b) without using any already built-in functions (aka, don't use an already defined pow function).  
+5 Answers
+Given two (dictionary) words as Strings, determine if they are isomorphic. Two words are called isomorphic if the letters in one word can be remapped to get the second word. Remapping a letter means replacing all occurrences of it with another letter while the ordering of the letters remains unchanged. No two letters may map to the same letter, but a letter may map to itself.
+
+Example:
+Given "foo", "app"; returns true
+   we can map 'f' -&gt; 'a' and 'o' -&gt; 'p'
+Given "bar", "foo"; returns false
+   we can't map both 'a' and 'r' to 'o'
+
+Given "turtle", "tletur"; returns true
+   we can map 't' -&gt; 't', 'u' -&gt; 'l', 'r' -&gt; 'e', 'l' -&gt; 'u', 'e' -'r'
+
+Given "ab", "ca"; returns true
+   we can map 'a' -&gt; 'c', 'b'  
+11 Answers
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Aug 23, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 1+ week. I interviewed at LinkedIn (Mountain View, CA) in February 2012.
+
+Interview
+
+Hiring process included a telephonic call, and onsite interview with 10 folks. two folks were assigned for every interview (that is 5 interviews). They were piloting an initiative of a junior developer paired with a senior developer, and finally with hiring manager. The recruiter didnot get back, but upon calling multiple times, I got a response saying negative.
+
+Interview Questions
+
+Easy css questions, and writing the code for the notifications header of linkedin. No CS or algorithm questions  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Oct 9, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Average Interview
+Application
+
+The process took 2 weeks. I interviewed at LinkedIn.
+
+Interview
+
+I was contacted by a recruiter through email and set up a phone interview. The technical portion was done through collabedit. They asked two coding problems. They also asked to describe a project I had worked on before. I had a second phone interview that was similar to the first. The interviewer was hard to understand. Again had two coding problems, both were fair.
+
+Interview Questions
+
+Questions about trees and recursion.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 6, 2014 Helpful (8)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Interview
+
+The recruiter contacted me through email and arranged me a technical phone interview. I'm a little disappointed though, the interview was scheduled at 6:00PM Eastern Time.
+During the phone interview(using collabedit.com), the interviewer asked two coding questions:
+(1) the deepest common ancestor of two nodes of a tree
+(2) all permutations of a string.
+The questions were reasonable, but I failed to solve the second one. Also the interviewer thought I'm not engaging enough(didn't talk much).
+Show Less
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Oct 7, 2014 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. The process took 2 weeks. I interviewed at LinkedIn in September 2014.
+
+Interview
+
+Applied online, got the phone screen with HR. They asked basic questions about your career and what you have done so far. Then got the 1st phone interview which was very simple and easy coding question. The 2nd phone interview was much harder and requires a thorough amount of studying. Be prepared!
+HR was very nice and responsive.
+
+Interview Questions
+
+Print a tree like reading a book, left to right.  
+3 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Dec 3, 2014 Helpful (15)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+I applied in-person. The process took 3+ weeks. I interviewed at LinkedIn (Mountain View, CA) in December 2014.
+
+Interview
+
+First round was behavioral and they just asked about how I got into CS and other standard questions about my interests.
+Second round was an hour long technical interview.
+Third round was two-one hour long interviews.
+And fourth was just talking with the team.
+
+Interview Questions
+
+Question Description: Write a function that, given a list of integers (both positive and negative) returns the sum of the contiguous subsequence with maximum sum. Thus, given the sequence (1, 2, -4, 1, 3, -2, 3, -1) it should return 5.  
+9 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Nov 25, 2014 Helpful (7)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 3 weeks. I interviewed at LinkedIn.
+
+Interview
+
+Was contacted by a recruiter through LinkedIn (very meta) and given two weeks preparation. The interviewer I was scheduled with wasn't the one who ended up interviewing me, and instead it was someone who had a very tough time speaking English and explaining the problems. I solved both questions, but it took a long time before I would understand what he meant when trying to explain them. This chewed up a substantial chunk of the interview time (for example, it took ~5-10 minutes to even get to the collaborative online editor because I couldn't understand the letters he was pronouncing in the URL).
+Show Less
+
+Interview Questions
+
+Write a function that, given a list of integers (both positive and negative) returns the sum of the contiguous subsequence with maximum sum. Thus, given the sequence (1, 2, -4, 1, 3, -2, 3, -1) it should return 5.  
+4 Answers
+Write a program that takes an integer and prints out all ways to multiply smaller integers that equal the original number, without repeating sets of factors. In other words, if your output contains 4 * 3, you should not print out 3 * 4 again as that would be a repeating set. Note that this is not asking for prime factorization only. Also, you can assume that the input integers are reasonable in size; correctness is more important than efficiency.
+
+PrintFactors(12)
+
+12 * 1
+6 * 2
+4 * 3
+3 * 2 * 2  
+4 Answers
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+TransEnterix Logo
+Senior Software Engineer
+
+TransEnterix, Inc. – Raleigh, NC
+
+ ConnectWise Logo
+Senior Software Engineer – new
+
+ConnectWise – Raleigh, NC
+
+ LifeOmic Logo
+Senior Software Engineer
+
+LifeOmic – Raleigh, NC
+
+ Lenovo Logo
+Software Engineer
+
+Lenovo – Raleigh, NC
+
+Nov 22, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Average Interview
+Application
+
+I interviewed at LinkedIn in November 2014.
+
+Interview
+
+output all the permutations and compute the code time complexity
+if your code is good enough, the time complexity should be n!
+but when i was interviewing with the two interviewers, i wrote a n^n solution.
+actually, there are recursive and iterative solutions in n! time complexity.
+The best solution should call next permutation function n! times.
+
+Interview Questions
+
+output all the permutations and compute the code time complexity  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Nov 19, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Easy Interview
+Application
+
+I applied through college or university. The process took a week. I interviewed at LinkedIn in October 2014.
+
+Interview
+
+Got a first round phone interview. it is a HR and a few general questions like: why do you choose LinkedIn? why do you want to be a software engineer? what is your expectation from our company? what kind of working environment do you want?
+
+Interview Questions
+
+Do you have any hobbies related to technical part? rate your programming skills  
+
+
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took 2 weeks. I interviewed at LinkedIn in October 2014.
+
+Interview
+
+I applied online on their career site and was contacted by a recruiter 2 weeks later.
+Initial phone screen with recruiter - was asked if I currently hold any other offers, the name of the companies who have scheduled interviews with me, my top choice companies, and why I want to work at LinkedIn. It went well.
+Technical phone interview: 1. Find duplicates in an integer array 2. Given a log file how do you parse the valid ip addresses and make sure there are no duplicates.
+Show Less
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Nov 17, 2014 Helpful (7)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through college or university. The process took 2+ months. I interviewed at LinkedIn (Mountain View, CA).
+
+Interview
+
+First had a call with the recruiter who scoped my background and interests and decided for which stream within software engineering was he going to put my application in for. Since I'm more of an interactive, client-side guy, I chose Software engg - Frontend.
+Had an hour long phone interview with a frontend engineer , who started with general CS and systems questions, went deep into JAVA (Threads, deadlocks, VM, garbage collections) and ended with some challenging javascript questions, which neede knowledge of javascript patterns.
+About a week later, got a call saying I had made it and they were flying me out to Mountain view for the on-site rounds, 'INvitational'. Chose a convenient date.
+On their campus, got to know that linkedin holds 'INvitational' for entry-level candidates. It's basically one whole day of interviews and events with their selected set of candidates. The day started off with breakfast, ice-brekers for all the interviewees and an inspirational talk by a senior manager. After warming up, two hour long interviews were scheduled. Both with experienced engineers. One was algorihms - with concept only from standard books like CTCI and the second was web-module development test, where I was shown a certain part of their site and had to write the structure, style it and code the logic. The main thing is to talk through your approach.
+After the first two rounds was a long tour of campus, lunch and talk with recently joined engineers about their experience. Spent 2 hours here, but helped calm me down.
+The final 2 rounds came after, one was with a very experienced engineer, who showed me a new UI feature he was implemeting on his work laptop and I had to try and code that up. Stumbled a lot here, mainly because I didn't know about how to implement each feature for all browsers/devices. The last round was a manager interview in which I had to talk about a system design (CTCI - esque) and later about my work experience and work style, probably to determine a culture fit.
+The day ended by all of us candidates and a few recruters going to a nice sushi place with tons of options. Linkedin surely keeps you well fed.
+Show Less
+
+Interview Questions
+
+Develop a module on the actual site, keeping in mind the concepts of graceful degradation and supporting all users.  
+1 Answer
+Negotiation
+
+Linkedin is generous with the offer. If you have equivalent offer, then you can ask for a little more.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Nov 14, 2014 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through college or university. The process took 3+ weeks. I interviewed at LinkedIn in October 2014.
+
+Interview
+
+Met and talked to a recruiter at a Career Fair. Received an email from the recruiter that they were interested and told to apply to the position online. Was then scheduled for a 60 minute technical phone interview. Invited to on campus final rounds one week later during which I had two technical interviews with engineers, one behavioral interview with a manager, and one system design interview with an app developer engineer.
+Show Less
+
+Interview Questions
+
+Design a web based presentation system  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Nov 14, 2014 Helpful (3)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 3 weeks. I interviewed at LinkedIn in November 2014.
+
+Interview
+
+Had first phone call with HR. Went fine. Then There were 1 phone interviews, then told me that I'm out... I was not fully prepared, especially white board coding. So I suggest do more practise for white board coding, bug free.
+
+Interview Questions
+
+Questions are not hard, find number in rotated sorted array, like: find 3 in "4,5,1,2,3".  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 13, 2014 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Difficult Interview
+Application
+
+I applied online. The process took 4 weeks. I interviewed at LinkedIn in September 2014.
+
+Interview
+
+1 round phone interview and answered two questions, one is to print tree level by level, the other is check if a string is a valid number including dot. Onsite interviews with 5 rounds in total, 2 rounds with coding, 1 round with design, 1 round with projects, 1 round with culture
+
+Interview Questions
+
+Design web calendar  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Oct 13, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 5 weeks. I interviewed at LinkedIn (Mountain View, CA) in September 2014.
+
+Interview
+
+Interview Process was very smooth - Took about 5 weeks. Had two initial phone interviews. These rounds were purely programming rounds. Got notified of the results the same day itself. Onsite interview consisted of 6 rounds. 2-programs, 1- design, 1- lunch, 1-manager. Interview process was very smooth and organized and all the interviewers made sure that I felt comfortable with the process. I would suggest practicing lot of programming questions, look into LinkedIn opensource projects, read a lot about Distributed Systems.
+Show Less
+
+Interview Questions
+
+Read in depth about the technologies that you have used so far, even though you haven't used it recently.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 16, 2014 Helpful (13)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 2 weeks. I interviewed at LinkedIn.
+
+Interview
+
+Had first phone call with HR. Went fine. Then There were 2 phone interviews. Both of them asked traditional questions. The second technical round interviewer was very rude. Did not introduce himself. He got into the coding test directly. He asked 2 questions which I answered in 30 minutes out of the one hour interview. He had no better thing to do so he asked me trace the whole recursive code on phone. I don't know how these people judge someone's skills.. Their questions are either from leetcode or some fixed set of pool. I got a reject the next day even after answering their questions well in time.
+Show Less
+
+Interview Questions
+
+Power of a number. Wrote a logn algorithm directly
+Level order traversal
+Permutations of an array of numbers. Wrote a recursive algorithm  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 16, 2014 Helpful (18)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 4+ weeks. I interviewed at LinkedIn.
+
+Interview
+
+Got contacted by a recruiter via linkedin. Did an initial phone interview on ml concepts and coding and according to the recruiter it went so well that they did not need me to do another one.
+Got invited to the campus for an onsite which I can name more a torture than an interview; staring from about 9:30 am lasting until 5pm. 7 interviews in a day!!!!! Unstructured interview; I was doing the interview for a data science/software engineering position; open ended questions; some interviewers were more after math/theory and some high level software design and some not sure! It was hard to figure who is looking for what and how to form a proper answer. One of the interviewers was a little rude even though he was 15-20 mins late for the interview. Generally not a good experience. The campus and food were great though.
+Got a call from recruiter a few days later. "Your interview went well but we couldn't find any position for you. I tried to find a team by passing your resume over but unfortunately we don't have an open position at the time"! A simple question for them: Why the hell do you interview people then? Why the hell do you waste people's times by sending bunch of bol... job opening messages over and over? Interesting that after I did the onsite and was waiting for the feedback, there was another linkedIn recruiter contacting me about open engineering position at linkedin!!!!
+Show Less
+
+Interview Questions
+
+Simpel but open ended questions  
+2 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+TransEnterix Logo
+Senior Software Engineer
+
+TransEnterix, Inc. – Raleigh, NC
+
+ ConnectWise Logo
+Senior Software Engineer – new
+
+ConnectWise – Raleigh, NC
+
+ LifeOmic Logo
+Senior Software Engineer
+
+LifeOmic – Raleigh, NC
+
+ Lenovo Logo
+Software Engineer
+
+Lenovo – Raleigh, NC
+
+Oct 18, 2014 Helpful (17)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Easy Interview
+Application
+
+I applied through other source. The process took a week. I interviewed at LinkedIn (Mountain View, CA).
+
+Interview
+
+One of the coolest interview experience. Had a standard phone screen, followed by a round of on-site interviews. On-site interviews were really focused, which you don't see much often, and all the interviewers were top-notch people. Really enjoyed the process, which was a big plus for me when considering the offer.
+
+Interview Questions
+
+Questions were pretty basic and standard. They can be aced without any prep. LinkedIn is probably more interested in maintaining a culture fit, where most people might fail to cross the hurdle.  
+Answer Question
+Negotiation
+
+They matched and exceeded all my other offers
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Apr 22, 2014 Helpful (19)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took 3 weeks. I interviewed at LinkedIn (Mountain View, CA).
+
+Interview
+
+1st call - Phone call with the Recruiter just to talk about what you've done and what currently interests you. Basically to directly communicate with you to see if you'd be a good fit for the company to want to go through the interview process with you
+2nd call - Technical phone interview #1 using Collabedit. Given two questions to solve in one hour. First question was to find the lowest common ancestor given two nodes and the second question was to determine if two strings are isomorphic (there exact question can be found on this site)
+3rd call - Technical phone interview #2 also using Collabedit. Given two questions to solve in one hour as well. First question was find the largest subsequence given an array that yields the largest sum. The second question was a modification of the first that required me to find the largest subsequence of the given array that yields the largest PRODUCT. Didn't complete the code for the second question in time.
+Side note, recruiters were really easy to talk to and really speedy with their response.
+Show Less
+
+Interview Questions
+
+Nothing really unexpected or difficult. If you put the time out to study for LinkedIn, you should be more than fine.  
+
+
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 1 day. I interviewed at LinkedIn (Mountain View, CA).
+
+Interview
+
+After two rounds of phone interviews.
+The onsite interview involves seven rounds. Five of them are design questions.
+
+Interview Questions
+
+Rest system design. Amazon website design. Read/Write locking. Generate all factoring components.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Apr 2, 2014 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Interview
+
+Just the first round interview, give me a question on codility. You should answer it within the 40 mins
+
+Interview Questions
+
+it's very hard question. 40 mins is not enough for me.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Apr 9, 2014 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 1+ week. I interviewed at LinkedIn in April 2014.
+
+Interview
+
+Contacted by recruiters through linkedin, the process took less than a week, and then had an initial phone interview followed by another phone screen. After 2 days the recruiter got back to me providing a negative response. Nothing was serious, the questions are straightforward there is no tricks or any difficult problems, it's just if you did anything wrong and didn't correct it and even if you correct it; it could be a red flag to them, also the speed is very important. The recruiter didn't have much details to share with me and he told me that there is nothing serious, but, this is how it works, for me; I didn't know the criteria they judged about.
+Show Less
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Apr 7, 2014 Helpful (9)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied online. The process took 5 days. I interviewed at LinkedIn (Mountain View, CA) in March 2014.
+
+Interview
+
+Contacted by recruiter
+Phone screen by 2 engineer using http://collabedit.com
+
+Interview Questions
+
+* Print binary tree level by level
+* Find distance between words in a string
+  eg: String =&gt; "I am a good girl" distance between "I" and "good" is 3  
+5 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jun 19, 2014 Helpful (3)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Average Interview
+Interview
+
+Contacted via linkedin, talked for a bit about what i've done and setup a phone interview. Interview was over the phone with two other interviewers. The question was about returning n closest points on a plane. Interviewers were hard to understand and hung up on minor code related details about the code instead of the general concepts.
+
+Interview Questions
+
+return n closest points on a plane  
+2 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Jun 5, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Francisco, CA
+No Offer
+Application
+
+I applied online. I interviewed at LinkedIn (San Francisco, CA).
+
+Interview
+
+Applied online with no internal referral, and a few days later there was a recruiter contacted me.
+For the phone interview, I was asked a multi-thread and thread safety question during the phone interview, for which I did not prepare. I was focusing on data structure, algorithm, and design. Given that I did not prepare for this type of questions, I was notified by the recruiter 2/3 days after the phone interview.
+Show Less
+
+Interview Questions
+
+The unexpected question is on this thread safety, for which i did not prepare before the interview.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 7, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Interview
+
+First I went through a phone interview where they ask me the most basic questions, like what am I working on, what is my strength, ect. Second interview was a more technical phone interview where they ask me to write some class definition online using any programming language I prefer.
+
+Interview Questions
+
+Nothing unexpected. They asked questions about data structure and algorithm.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 18, 2014 Helpful (3)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Difficult Interview
+Application
+
+I applied online. The process took 2+ weeks. I interviewed at LinkedIn.
+
+Interview
+
+Applied on Company website. Contacted by HR, scheduled for technical screen. Online technical screen using a collaborative editing tool. Second technical screen by phone, no on line editing.
+Scheduled for 5 hour on site. senior manager for position and I had short chat about company culture, then got lunch. Then 4 sets of technical interviews with one or two people asking me questions.
+Culture was very exciting to me - the people seemed very enthusiastic about the company and that they would be solving interesting problems that would make a difference in people's lives.
+Show Less
+
+Interview Questions
+
+The difficult portion was due to poor time management - I didn't know I was going to be asked to do two whiteboard coding problems and the interviewers had asked me to talk about successes in my career. So 40 minutes of a 60 minute session were taken up before they got to what was important. My advice is to ask interviewers politely what they need to cover in their time.  
+Answer Question
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+TransEnterix Logo
+Senior Software Engineer
+
+TransEnterix, Inc. – Raleigh, NC
+
+ ConnectWise Logo
+Senior Software Engineer – new
+
+ConnectWise – Raleigh, NC
+
+ LifeOmic Logo
+Senior Software Engineer
+
+LifeOmic – Raleigh, NC
+
+ Lenovo Logo
+Software Engineer
+
+Lenovo – Raleigh, NC
+
+Jul 25, 2014 Helpful (5)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. The process took a week. I interviewed at LinkedIn in July 2014.
+
+Interview
+
+Applied online, got call from Recuiter and the process was very professional and quick. The hiring manager and HR and Recruiter worked well to accommodate any time restrictions i had. Had initial phone screen with one of the engineers. Used collabedit for the interview/tech phone screen. Questions asked were fairly simple. Check if a String contains a number or not. Other was a backtracking/recursion basic CS question. Also some basic Java questions.
+Show Less
+
+Interview Questions
+
+Check if a String contains a number or not  
+5 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Aug 8, 2013  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+Declined Offer
+Interview
+
+(for summer internship) got in touch with a recruiter through my friend who was recruited by her. One technical interview on phone and then got invited to on campus interviews. It was a group event where bunch of candidates for summer internship got together. Had two technical interview and one q&a session. They treated us extremely well and I was very content with the process throughout
+
+Interview Questions
+
+information retrieval question, and a few more  
+
+
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through other source. The process took 4 weeks. I interviewed at LinkedIn (Mountain View, CA) in December 2012.
+
+Interview
+
+I was contacted by a LinkedIn HR rep a few weeks after submitting my resume at a conference. He was really enthusiastic and clearly loves his job, which initially peaked my interested in working for LinkedIn.
+I had one phone interview, which was pleasant and went well. About a week later I was invited to attend a Linkedin Invitational, which I gather is LinkedIn's new approach to the gruelling, all day long interview process. Basically, I arrived at the LinkedIn office, along with about fifteen other Software Engineering candidates (all new grads, like me), to participate in an all day long event which included not only four hour-long, one on one interviews (three technical, one management), but also included Q&A sessions with a group of recent hires, the director of Engineering and the CEO himself, as well as a campus tour, and a fancy dinner in San Francisco. LinkedIn put us up in a great hotel in downtown San Francisco that night, and I gladly took the opportunity to spend the rest of the night on the town with the other candidates (it was a Friday after all).
+Overall, the experience was overwhelmingly positive. How could I not want to work for LinkedIn after that? Especially after talking to so many current LinkedIn employees who clearly loved their jobs and were genuinely excited to talk to us candidates. If a company cares so much about treating not just their employees well, but even their candidates well, I think it bodes well for a future career with them.
+Anyways, a week later I was contacted by my HR rep again, this time to offer me a job with a very good salary and hefty relocation bonus, as well stock options, great benefits, free CalTrain pass, etc. It took all of about two seconds to decide I was going to take the job.
+Show Less
+
+Interview Questions
+
+How would you design amazon.com?  
+1 Answer
+Program an iterator for a Linked List which may include nodes which are nested within other nodes. i.e. (1)-&gt;(2)-&gt;(3(4))-&gt;((5)(6). Iterator returns 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;6  
+1 Answer
+Negotiation
+
+I didn't feel the need to negotiate since the offer was already much higher than any of my other offers and it was higher than any of my friends offers.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Jun 5, 2013 Helpful (7)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 1+ week. I interviewed at LinkedIn.
+
+Interview
+
+Recruiter was awesome and had great communication. Did a phone screen with her and then moved on to two technical phone interviews. Both phone interviews are done in an IDE of your choice with someone watching your screen over skype. You're given 45 minutes to complete the problem and then allowed to wrap it up at home and submit it.
+Passed the first telephone screening but "failed" the second. When I asked why I failed, the recruiter sent me the engineer's responds with all of these problems with my code.
+Granted these problems were present in my first 45 minutes (because I was working through the problem) but my final solution had none of these problems.
+It was evident that the 2nd interviewer didn't even look at my final solution. He made his judgement off of what he saw on the phone an told me to submit a final answer anyways.
+Show Less
+
+Interview Questions
+
+Implement a shooting algorithm for the game of Battleship.  
+1 Answer
+Implement an algorithm to convert an integer into a roman numeral string and vice versa.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+May 30, 2013 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Interview
+
+I was called by the internal recruiter. The initial HR call was very pleasant and courteous. She set up a phone technical interview with two interviewers. One was the lead and the second was the follower. I had to log on to CollabEdit which allows you to write code in an editor.
+
+Interview Questions
+
+Print a tree on the screen line by line.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+May 28, 2013 Helpful (3)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Interview
+
+Phone Screen
+
+Interview Questions
+
+Asked a question to determine the sum of an array of integers. Recursive problem.  
+4 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+May 28, 2013 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through an employee referral. The process took 3 days. I interviewed at LinkedIn (Mountain View, CA) in May 2013.
+
+Interview
+
+I skipped the phone interview since I had an employee's referral and went straight for the technical onsite interviews. There were five 1-hour long back-to-back technical rounds. The first round was a general design round with the hiring manager. He asked me some high level architecture questions, how to implement a REST API, etc. which were pretty basic. After that there were 3 coding interviews with a panel of 2 engineers in each round.
+My problem was that after giving you the initial question the interviewers gave me no time to think. Every time you pause to think your general solution or if you try coming up with a better approach they keep asking you more questions. Two of those interviews seemed to be interviewing the first time and almost seemed to have an agenda to put me down so he/she could look good to someone else. The questions weren't hard at all and in fact I ended up giving optimized solutions O(n) instead of standard brute-force solutions O(n^2). I felt like two of the six engineers themselves didn't quite understand why the solutions were better and ultimately although I nailed 2 of the 3 interviews I ended up not getting an offer. I guess I feel let down by the interview process cause although I took some more time, I ended up arriving at optimal solutions on 2 of the 3 coding challenges. I could have just gone for the simple, boring and brute-force solution but instead I tried to do better and they didn't seem to care or notice.
+The last round was on design and architecture by a senior engineer and I really enjoyed that interview. It was open ended and challenging enough and the interviewer seemed to know what he was doing as we dug deeper and deeper into the details.
+Show Less
+
+Interview Questions
+
+Implement a hash table  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 17, 2013 Helpful (6)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. The process took 4+ weeks. I interviewed at LinkedIn.
+
+Interview
+
+Submitted resume online,
+Email from recruiter same day
+Phone screen with recruiter
+technical phone screen with online coding exercise with hiring manager a week later
+Another technical phone screen with an engineer in the group
+On site interviews - multiple engineers
+
+Interview Questions
+
+At the end of a long day of interviews I was asked about a prior success in my career. I was not told that there was a second more critical part of the interview - another coding exercise at the whiteboard.
+
+Code a non blocking thread safe queue
+and
+code a text justification routine (Given a line length insert white space so text is uniformly displayed within the given length).
+
+Both are fairly straightforward, but I had spent time on the first portion.  
+1 Answer
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 4, 2013 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Urbana, IL
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took a week. I interviewed at LinkedIn (Urbana, IL) in September 2013.
+
+Interview
+
+Get contacted by recruiter and set up a phone interview. There're 2 interviewer at the same time, one senior engineer and one engineer who's just 4 months out of college. Questions are very easy. But I've already had two other interviews that day and gets pretty tired. And the younger engineer was keep pushing me and talking all the time when I was coding and show how knowledgeable he is. He interrupts me all the time, even when I call a helper function which I plan to implement later. I can't think under this situation and skewed up the interview.
+One week later the recruiter called me to inform me about the rejection, when I'm in a lecture.
+Show Less
+
+Interview Questions
+
+Nothing difficult if you're under a quite environment.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 21, 2013 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took 4+ weeks. I interviewed at LinkedIn in September 2013.
+
+Interview
+
+Had 2 phone interviews, supposed-to-be-five-but-turned-out-to-be-seven rounds of onsite interviews. 3 were system architecture and design related rounds. Found those a bit hard as compared to the coding & algorithmic questions.
+Overall experience was average.
+Post lunch interviewers were less experienced I'm assuming, because one of them yawned non-stop and a couple others had taken a vow not to speak during the interviews.
+
+Interview Questions
+
+Nothing in particular  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+TransEnterix Logo
+Senior Software Engineer
+
+TransEnterix, Inc. – Raleigh, NC
+
+ ConnectWise Logo
+Senior Software Engineer – new
+
+ConnectWise – Raleigh, NC
+
+ LifeOmic Logo
+Senior Software Engineer
+
+LifeOmic – Raleigh, NC
+
+ Lenovo Logo
+Software Engineer
+
+Lenovo – Raleigh, NC
+
+Nov 14, 2013 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 4 weeks. I interviewed at LinkedIn (Mountain View, CA) in November 2013.
+
+Interview
+
+got contacted by recruiter on LinkedIn. did 2 phone interviews and most questions can be found in interview books or on glassdoor. Made it to on-site and had 5 back to back interviews. it was quite tiring. I failed the design interview and some coding. there was no dynamic programming questions. lunch interview was easiest as we just chatted and one coding interview was easy but got grilled a lot in the other one and that's where I also failed some as they wanted to ask me two questions and I only got to one.
+Show Less
+
+Interview Questions
+
+Need to be able to explain a project you've worked on in clear detail. I failed this one even though I was aware of this question.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Mar 24, 2014 Helpful (18)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Jose, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 2 days. I interviewed at LinkedIn (San Jose, CA) in March 2014.
+
+Interview
+
+Interview was an initial phone conversation followed by an onsite interview day. I was interviewed by 5 different people. They flew me out and put me up in a hotel. The interview process was pretty standard. It consisted of a technical coding interview where I had to write code on the white board, followed by a software design interview and then some interviews with the management. I also was given a tour of the campus and given a welcome to your interview pack. Hardest part of the interview was at the end with one of the executives, who tore apart my resume, questioned what I was wearing, swore and made me feel like a fraud!
+
+
+
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+I interviewed at LinkedIn (Mountain View, CA) in September 2013.
+
+Interview
+
+After submitting my resume, the recruiter contacts me and give me an interview. I have actually 2 phone interview. The interviewers are very nice and the problems are not difficult. They asked my experience and my past project and some software engineering knowledge. The algorithm the asked is very easy.
+
+Interview Questions
+
+Parse the IP in a file, actually, it is not difficult  
+2 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Mar 9, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied online. The process took 1+ week. I interviewed at LinkedIn (Mountain View, CA) in January 2014.
+
+Interview
+
+Applied online, takes about 1 week to processing.
+First round is a phone interview with HR. Nothing technical, just talked about my background and interest. And a brief introduction of their company and team. All behavior questions.
+Then two rounds of technical phone interviews. Online coding, 2 questions each time. Not too hard, just some typical algorithm questions.
+
+Interview Questions
+
+Normal interview, no unexpected questions.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Feb 26, 2014 Helpful (22)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Average Interview
+Application
+
+I applied online. The process took 2+ months. I interviewed at LinkedIn in February 2014.
+
+Interview
+
+Phone interview, followed by another phone interview, which was exactly the same, just different questions, followed by nothing...
+Yes, that's right. On the first interview, I solved the given problem. Then they scheduled another phone interview. It went well, however, I found the interviewers to be really unprofessional, kind of rude. The whole process felt like I was talking to machines reading a script. Really, no human factor in the whole process. At this point I knew I did not want to work for this company.
+I wrote the recruiter an email expressing my disappointment. He replied saying he will take a look and give me back feedback.
+I never heard again. I accepted another offer, but out of curiosity, and for the purpose of this review, I decided to call the recruiter 10 days later.
+The guy told me he left LinkedIn for another opportunity, and that he also really disliked how things were done there. We ended up laughing about it together, and congratulating each other on our new gigs outside of LinkedIn!!
+My recommendation is the following. I would never work for a company that treats applicants like an assembly line. Know that they are lucky you decided to apply, and they should know that too. They should make you feel comfortable on the phone, and motivate you to solve the problem, not just throw you a question and sit back, read a script.
+Show Less
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Feb 18, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Easy Interview
+Application
+
+I applied online. The process took a week. I interviewed at LinkedIn in November 2013.
+
+Interview
+
+First talk about the experience and then give me one question.
+
+Interview Questions
+
+Write a function to realise a's power of b.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Feb 19, 2014 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied online. The process took 5 days. I interviewed at LinkedIn.
+
+Interview
+
+I had two phone interviews with the company. One for behavior questions, the other one for technical questions.
+
+Interview Questions
+
+Find an element in a rotated array.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Nov 29, 2013  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. I interviewed at LinkedIn in November 2013.
+
+Interview
+
+Had a phone interview in the initial round.The question involved recursion.Interviewer was very much cool and the interview challenging.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Dec 22, 2013 Helpful (6)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 3 weeks. I interviewed at LinkedIn (Mountain View, CA) in October 2013.
+
+Interview
+
+Had an initial call with a recruiter followed by two phone screens and 4 onsite interviews as part of LinkedIn Invitational. Recruiting did a great job showing us around, and a few of the engineers made a really strong impression on me. However for the most part I found the interviewers to be cold, deliberately vague, and frustrating. In one case, the interviewer would frantically grab his notepad and start scribbling furiously every time I made a mistake. It was that obvious. Compared to my interviews at Google (received an offer), although the process at both places was largely robotic technical interviewing, I felt LinkedIn interviewers were much more difficult to connect with.
+Show Less
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Feb 2, 2014 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through college or university. The process took 3+ months. I interviewed at LinkedIn in December 2013.
+
+Interview
+
+university recruiter contacted me within one week after career fair. first round was just behavior questions, then another around of technical phone screen. Final round was two back to back technical interview then followed by talking to one of employees. First technical screen was just about data structure stuff. Shouldn't be hard if you prepare well for data structures.
+
+Interview Questions
+
+Final round was kind of unexcited, was asked to write out all the combination of factors of one number. another was about implementing hash table.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+TransEnterix Logo
+Senior Software Engineer
+
+TransEnterix, Inc. – Raleigh, NC
+
+ ConnectWise Logo
+Senior Software Engineer – new
+
+ConnectWise – Raleigh, NC
+
+ LifeOmic Logo
+Senior Software Engineer
+
+LifeOmic – Raleigh, NC
+
+ Lenovo Logo
+Software Engineer
+
+Lenovo – Raleigh, NC
+
+Jan 5, 2014 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through an employee referral. The process took 4+ weeks. I interviewed at LinkedIn (Mountain View, CA).
+
+Interview
+
+I was referred by a friend, and then contacted by an internal recruiter. I chatted with him for a while, and a phone interview was scheduled.
+The phone interview was fairly standard. I had told the recruiter that I was most comfortable interviewing in Python, or C++ in a pinch. This apparently didn't get passed along to the interviewer, who asked me to code some stuff in Java. I was also asked about my experience, although it almost seemed like he was waiting for me to say the right magic word in the answer than actually listening about what I'd done.
+I was told by the recruiter that they'd like me to do more interviews, and that those would be coordinated by a different recruiter. For the next 3 weeks, this recruiter kept telling me he'd be in touch "soon". That never happened, despite me repeatedly reminding him. Then he disappeared on vacation for the holidays. I don't know if he was being lazy, or what. I still haven't been contacted, or told that I'm no longer being considered, so who knows.
+Show Less
+
+Interview Questions
+
+Print out a binary tree with each level printed on its own line.  
+4 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jan 14, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Difficult Interview
+Application
+
+I applied online. The process took 2+ months. I interviewed at LinkedIn (Mountain View, CA) in December 2013.
+
+Interview
+
+Applied online through LinkedIn, received an email from a recruiter in a week to set up a call. Initial chat lasted about 20 mins, and was about some basic background and interests, no technical questions. Then he scheduled the first technical phone interview. The recruiter called me one week after the first phone interview and scheduled the next technical phone interview. One week after the second phone interview he scheduled the onsite interview. The final onsite interview lasted 6 hours, from 10:00AM to 4:00PM, including 5 rounds and an hour lunch. The onsite interview was on late Dec, so I got their reply in Jan after their Christmas holiday.
+Show Less
+
+Interview Questions
+
+Two of the interviewers are group leaders or managers, and they asked unexpected details about the projects and experiences. So you really should be an expert about what you did.  
+
+
+	
+Software Engineer Interview
+Anonymous Interview Candidate in San Francisco, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied online. The process took a week. I interviewed at LinkedIn (San Francisco, CA) in February 2012.
+
+Interview
+
+Phone interview with a recruiter. Almost all questions can be found here.
+
+Interview Questions
+
+trivial technical questions, such as some Unix commands, bytes of an integer etc.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+May 20, 2010  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Difficult Interview
+Application
+
+I applied through an employee referral. The process took 2 weeks. I interviewed at LinkedIn (Mountain View, CA) in March 2010.
+
+Interview
+
+The recruiter was efficient in setting up phone interview and on-site interview. Phone interview consisted of Java questions: basic, object reference, singleton pattern. On-site interview: linked list questions, recursion, multi-threading, and unit testing in terms of Test-driven programming (This is where I stripped). They're big on Agile I think. The main thing is you were not only required to solve the problems but also solved it the way they wanted/suggested.
+
+Interview Questions
+
+Java: how do you make n threads run at the same time?  
+6 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+May 16, 2010 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Jose, CA
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied through an employee referral. The process took 2 days. I interviewed at LinkedIn (San Jose, CA) in April 2010.
+
+Interview
+
+First I had a phone interview - the guy asked me questions about memory leaks and immutability - it was more like good discussion.
+Next, at onsite interview was mostly writing code - equals, hashcode, linked list etc.,
+
+Interview Questions
+
+linked list reversal  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Jun 30, 2010 Helpful (3)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 1 day. I interviewed at LinkedIn (Mountain View, CA) in June 2010.
+
+Interview
+
+I was approached by direct recruiter.
+There was an initial phone screen and then an onsite interview.
+They asked Data Structure and Technical questions.
+It was extremely well structured.
+1) How do you search through a lot of data..ie. TB.
+2) Multi Threading Lock Question. ie Bounded Queue
+
+Interview Questions
+
+How do you search thrgough huge flatfile?  
+3 Answers
+How do you set up a bounded Queue?  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jan 19, 2011 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took 3 weeks. I interviewed at LinkedIn (Mountain View, CA) in November 2010.
+
+Interview
+
+The location and office is very great. The interviewers were very friendly. I applied online, be scheduled 1 phone interviews(non-tech) and one tech phone interviews within 2 weeks, then the onsite. The onsite contains 6 1 on 1 interviews, all white broad coding.
+
+Interview Questions
+
+which project you did before you like most  
+Answer Question
+consider a B2C website like Amazon, which will receive thousands requests from buyer per minutes. How will you design the "shop cart " component for it? where should the customs' shop cart data stored?  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Apr 22, 2011 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+The process took 4 weeks. I interviewed at LinkedIn (Mountain View, CA) in March 2011.
+
+Interview
+
+LinkedIn was a very extensive interview process, they really want to make sure that you're the right person for the job. I had 3 phone interviews before I was brought on site, from there I had 5 one on one interviews. The technical difficulty of the interview was on par with other top companies (google, microsoft, fb). I really enjoyed interviewing with them.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jun 6, 2011 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied online. The process took 2+ weeks. I interviewed at LinkedIn (Mountain View, CA) in May 2011.
+
+Interview
+
+Same questions as in the glassdoor.com. LRU cache, designing hangman web application, generic HashMap implementation, etc. Interviewers were expecting very specific answers in the way they want to hear it. Corrected me almost every single line while writing the code. I was supposed to have 4 interviews. Was very abruptly and rudely stopped during the third interview. Hope they will be little more professional in future. Know in and out of Java, collections, APIs, LRU Cache, etc and you should easily be through.
+Show Less
+
+Interview Questions
+
+Design LRU Cache  
+3 Answers
+Design a hang man online application  
+2 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 27, 2011  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+The process took 2 days. I interviewed at LinkedIn (Mountain View, CA) in July 2011.
+
+Interview
+
+Recruiter contacted me in Friday afternoon through LinkedIn, their own website. I told them I have a pending offer, and they scheduled phone screening on Monday, and then on-site interview on Tuesday. Very efficient. When I get the interview confirmation letter, I am surprised that I need to meet a dozen interviews. Actually, I stayed in a meeting room and interviewers came in pairs and asked me questions. It seems that one of them is the primary interviewer and the other just shadowing him/her.
+Show Less
+
+Interview Questions
+
+Design a hangman game  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+Jul 26, 2011 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Francisco, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. The process took 1 day. I interviewed at LinkedIn (San Francisco, CA) in June 2011.
+
+Interview
+
+Very cordial interview. Interviewer was actually interested in the kind of work I want to do and my past projects. Though i was rejected I recommend people to apply for this firm
+
+Interview Questions
+
+Find median of an infinite stream of integers in O(1) time  
+7 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 19, 2011 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+The process took 3 weeks. I interviewed at LinkedIn (Mountain View, CA) in September 2011.
+
+Interview
+
+Overall it is a positive experience because Linkedin is one of my favorite companies. The two phone interviews went well because the questions about relatively easy. In the onsite interview they asked me a bout regular algorithm questions, DP questions, distributed system questions, a game design question and most-interesting project. The questions are not as hard as Google/Facebook and sit in the same level as Amazon/Microsoft. The people are generally nice except two interviewers looking and laughing at funny pictures during interview. I am confident with my performance on all the other rounds except the one with two unprofessional interviewers, they interrupt me multiple times and always persuade me to adopt their "best" solution. Finally I was rejected after 1 week.
+Show Less
+
+Interview Questions
+
+game design, DP, string manipulation  
+
+
+
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 3 weeks. I interviewed at LinkedIn (Mountain View, CA) in July 2011.
+
+Interview
+
+They really focus on general engineering skills - ie, algorithms, game design techniques, thought process of solving a problem on your feet
+
+Interview Questions
+
+Design a scalable server for the hangman game  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Aug 12, 2011 Helpful (4)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+The process took 1 day. I interviewed at LinkedIn (Mountain View, CA) in July 2011.
+
+Interview
+
+My worst interview ever. They terminated it at the second interviewer and I was lead out of the company. I can only comfort myself by saying that at least I saved my time.
+
+Interview Questions
+
+filteriterator hasnext() and next() function  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sep 13, 2011 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Jose, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through an employee referral. The process took 2 weeks. I interviewed at LinkedIn (San Jose, CA) in July 2011.
+
+Interview
+
+Phone Interviews - 2
+One on one interview - 6
+Each interview was an hour long. It was not a progressive interview (increasing in difficulty). All the interview rounds were the same. It consisted of an algorithm question that was asked to solve
+
+Interview Questions
+
+Design data structure to implement T9 dictionary  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Feb 27, 2012 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Difficult Interview
+Application
+
+I applied through an employee referral. The process took 2 weeks. I interviewed at LinkedIn (Mountain View, CA) in February 2012.
+
+Interview
+
+The phone interview was an hour, including online coding. First the interviewer asked about your resume, then coding questions.
+
+Interview Questions
+
+Write put/get methods for a BlockingQueue  
+1 Answer
+Print a tree level by level  
+4 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Apr 19, 2013  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Easy Interview
+Application
+
+I applied online. The process took 2 days. I interviewed at LinkedIn in April 2013.
+
+Interview
+
+I applied the Software Engineer for new Grad, they response me at the same day as my application, that's very fast. We schedule the first phone interview about the backgound and set the technical interview. The process is not hard, the recuiter is nice. I will update it after I finish it.
+
+Interview Questions
+
+We have a nice talk about my intership, project, programming language I use, whether need a visa, and she told me some info about linkedin. No big diffculty, make sure do some reasearch abou the company  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Apr 30, 2013  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Average Interview
+Application
+
+I applied through college or university. The process took 1 day. I interviewed at LinkedIn.
+
+Interview
+
+The hiring process was pretty standard - phone screen following by phone technical, etc. The technical was awful. I ended up getting all their questions correct, but they stressed efficiency so much that I had to make my code significantly more complicated just to satisify them. I personally think this is a terrible mentality and that other factors such as code readability/maintainability are with a marginal sacrifice in performance.
+
+Interview Questions
+
+How to validate is a binary search tree is legit?  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Apr 29, 2013  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 4+ weeks. I interviewed at LinkedIn.
+
+Interview
+
+Had the initial phone interview, followed by two technical phone interviews. I passed both, and was then brought in for the on site interview. They are very open about their hiring process, and generally very friendly.
+
+Interview Questions
+
+How to write a deep iterator.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jan 29, 2013  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Interview
+
+A recruiter contacted me first, very nice, and arranged everything. Now waiting for the tech interview
+
+Interview Questions
+
+Recruiter is nice, nothing difficult  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+Nov 10, 2012 Helpful (15)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+Declined Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied through an employee referral. The process took 4+ weeks. I interviewed at LinkedIn (Mountain View, CA) in October 2012.
+
+Interview
+
+LinkedIn fast-tracked my interview process, but they managed to set up a series of interviews with the wrong people (their applications team, rather than the data team). Each interviewer separately came to the conclusion in the course of the interview that I should have been interviewing with the other team.
+There were five interviews throughout the day, all an hour each, all but one of which consisted of two interviewers each (a junior interviewer, who was "in training" as an interviewer, and a senior interviewer). Each interview had a different purpose: there was an interview with a manager to see about team fit, a "big-picture" design / software architecture interview, two coding interviews etc. I had just recently interviewed with Google, and was surprised to find that the technical competence of interviewers at LinkedIn was significantly lower than that of interviewers at Google. (This might have just been the people assigned to interview me, I don't know.) It was clear that at least half the interviewers who were asking technical questions came completely unprepared to understand some of the theoretical issues behind the questions -- one interviewer argued for 10 minutes with me about the properties of minimal spanning trees, which she clearly did not understand. When right off the bat I outlined the algorithm with optimal complexity, she spent 10 minutes debating with me whether the solution would even work, and her questions made it really clear that she didn't have basic intuition of graph theory, or understand how or why Prim's algorithm worked. She wasn't satisfied until I described a much more straightforward but less efficient algorithm. She also spent a couple of minutes going back and forth with her co-interviewer when they came in, while looking at a laptop screen trying to decide which question on a company-internal list of questions they should ask me: they hadn't even picked a question, much less thought through it. (A later interview, when they tacked on interviews with a couple of people in the data team, was in fact very technically challenging, and required a good understanding of Bayesian networks, which I didn't brush up on before the interview and therefore bombed.)
+I will say that overall the interview process at LinkedIn was much better structured and better organized than the process at Google. Also, repeatedly I heard from LinkedIn employees that the thing they liked about working there was that it was still a small, nimble company, meaning they could innovate fast, they owned their work, and they had access to pretty much anyone in the company. However, personally Google feels like a better cultural fit for me than LinkedIn.
+It took LinkedIn forever to get back to me with an answer (3 weeks?), in spite of the fact I had a major visa issue and had made it clear multiple times that I needed an answer quickly.
+Show Less
+
+Interview Questions
+
+Some questions about Bayesian networks.  
+Answer Question
+Reasons for Declining
+
+Cultural fit, less apparent technical competence than Google (at least speaking of some of my interviewers, I'm sure they have some great people there), lower salary offer than Google (even though they allocated greater equity), and the fact it took them forever to get back to me in spite of my request for a quick turnaround on the hiring decision.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 9, 2012 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Jose, CA
+No Offer
+Average Interview
+Application
+
+I applied online. The process took 1 day. I interviewed at LinkedIn (San Jose, CA).
+
+Interview
+
+Contacted be a Technical recruiter and then setup for a initial phone screen.
+
+Interview Questions
+
+Do you know Design Patterns and can you write a function in java to implement it?  
+Answer Question
+What is Abstract Class and its use. Gave me a example and asked me to extend and implement its methods  
+Answer Question
+Write a function to implement BFS.  
+
+
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+The process took 4+ weeks. I interviewed at LinkedIn (Mountain View, CA) in June 2012.
+
+Interview
+
+LinkedIn recruiter contacted me thru LinkedIn itself. Had 2 HR phone calls, asked very standard questions. Following are 2 x 45 mins technical phone. They are relatively easy. Then on-site which consist of 5 rounds. After passing all that, had one last phone call with the team manager.
+Overall, It is a very pleasant and smooth interview process. LinkedIn HRs and Interviewers are very professional and friendly. HR usually respond within 2-3 days. Work environment are very good!
+I would definitely apply again if I weren't in!!
+Show Less
+
+Interview Questions
+
+Why did you choose computer science?  
+1 Answer
+Negotiation
+
+I had a pending IBM offer, but Linkedin one is much more competitive. I didn't need negotiation at all, it is very fair offer.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Jun 15, 2012 Helpful (4)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took 4+ weeks. I interviewed at LinkedIn (Mountain View, CA) in June 2012.
+
+Interview
+
+In order to honor the NDA I signed, I'll try to be as vague as I can about the specific technical questions. Had a phone screen first. The phone screen consisted of two programming questions. The first one was very simple. It was a question just to make sure basically you can program and design unit tests for it. It was easy to get bugs in it, but as long as you know how to program, you should be fine. The second one tested your data structures. Make sure you know what lists and sets are good for.
+The recruiter was very responsive. I got a response within the next three days. He offered me good luck and transferred me to another recruiter to schedule the on-site. I had to change the on-site date once and the recruiter was very professional and accommodating.
+The on-site was extremely nice. To be honest, I wasn't particularly interested in LinkedIn at first, but the first phone interviews, recruiters, and campus really impressed me. Their campus is right next to Google's. Once you go in, they give you an ipad 2 for the day, where you can check your schedule and interviewers. It consisted of 5 interviews along with lunch: 2 technical, 1 design, 1 explain one of your projects in more detail than anyone would ever care, and 1 behavioral. The 2 technical interviews were fairly straight forward. First one was really straightforward in fact. It was just a very long programming question, but it was overall pretty straight forward and did not involve any special algorithms or data structures. The second one was a bit more tricky. All I can say is get very familiar with binary trees. I know for sure I got at least the first part very well. Second part, I spent a lot more time than I should have on it. The part I felt I really bombed was the design questions. The design question is actually posted on glassdoor by another candidate (hint hint), but I won't say it in order to honor the NDA, but definitely study the questions the other people have provided here. In any case, this interviewer impressed me most with his knowledge and he just seemed really smart in general. I'm sure this was the interview I got rejected on though. Definitely know your distributed systems. I was unfortunate in the fact that I never had any experience with distributed systems. I must also mention though, the last interview for the day was probably one of the worst interviews I have ever had. Not in terms of me not doing well, but the interviewers were pretty junior and seemed very nervous. It felt very awkward since one of them was studying something, and not paying attention at all, and the other was continually checking his time, obviously hoping it would be over soon. They drilled me in one of my projects into more details, which I kept giving, but it felt very uncomfortable since there were many instances when it felt like they did not know what to say so there were pockets of silence.
+Over all though, the experience was great. I did not get an offer, which I was a little disappointed with since I thought I did decently overall, but I did not do well on the design question and ultimately, it's their call on who they are looking for.
+Show Less
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jun 26, 2015 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 7+ weeks. I interviewed at LinkedIn (Mountain View, CA) in May 2015.
+
+Interview
+
+The recruiter reached me in LinkedIn and we had a conversation about my background. After that he arranged me a one-hour phone screen in which there were two interviewers who had asked me several coding problems. After the phone screen they seem to satisfy my answers and decided to have me do the onsite interviews which was consisted with five rounds of interviews in all, two of which are about coding, one about design, one about projects that I've done and one with the manager.
+Show Less
+
+Interview Questions
+
+There's requirements from the engineers that they want to limit the right of code files in git server by marking the owner of each file. How would you design the system to solve this problem? What if the user want to use regex when configuring the owner of files?  
+2 Answers
+How to apply the function of finding a string in the text of vim editor?  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Jun 27, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took 1 day. I interviewed at LinkedIn (Mountain View, CA) in June 2015.
+
+Interview
+
+I am not on the job market. Yet an internal recruiter contacted me via linkedin. I decided to do a quick tech with them to feel them out. They knew I have many years experience, so they arranged a senior person to conduct my interview.
+However, the question was extremely basic. So I was immediately turned off... I am fairly sure he had no idea of my background nor even looked at my resume.
+I did not even code the basic edge cases of handling null or empty input, because the interviewer kept interrupting me... Let me explain.
+I was logged into work on my normal machine, and so I had to use an auxiliary computer to do the tech interview... but that computer monitor is like 3 feet away from it's keyboard.. so i would type the line, then squint to look at it.. and before i could correct a typo, the interviewer would condescendingly indicate the line needed a correction.
+Show Less
+
+Interview Questions
+
+Create an isNumber(string) function. Handle signed / unsigned, floating point, any number of digits, etc. Probably commas, and currency signs, or whatever. It was open ended and governed by whatever unit tests he wanted you to make it work against.
+
+That was seriously, the only question they asked me; someone with software development experience since 1994. I was expecting graph theory.. tree traversal.. design patterns.. more relevant topics... and instead asked a question i solved 23 years ago in a basic C programming college course.  
+3 Answers
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jun 17, 2015 Helpful (3)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Jose, CA
+Declined Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 4 weeks. I interviewed at LinkedIn (San Jose, CA) in May 2015.
+
+Interview
+
+3 Rounds
+- 2 phone screens for an hour
+- 1 onsite
+   - 2 Coding
+   - 1 System Design
+   - 1 Experience
+   - 1 Hiring Manager
+
+Interview Questions
+
+Just data structure and algorithms questions  
+14 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Jun 10, 2015 Helpful (5)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took a week. I interviewed at LinkedIn in June 2015.
+
+Interview
+
+Recruiter contacted me. Set up a phone interview.
+I was informed there will be two interviewers on the phone, but only one of them turned up, not sure if other guy was on mute since he was new to LinkedIn per his linkedIn profile.
+The interviewer's body language revealed a lot about him. He was trying to be nice, but that wasn't really true. Asked me about skill set and then moved to technical part. First 35-40 minutes was about c++ questions and multi-threading. Then last 20 minutes or so was coding question. Overall the interview lasted for 1 hour. I took about 5-10 minutes to understand the question, primarily because there was about 30 lines of code pasted in collabedit already. When I tried to ask a question to clarify, I was told there is nothing to ask, everything is on collabedit. I guess I will let you guess his attitude. I explained him my pseudocode before coding and he seemed to be happy with it. I almost was done with the solution by end of 1 hour, but I guess that does not count. He did not give me a chance to ask my questions.
+To summarize, a lot of reviews on glassdoor says they repeat the questions. That was not the case with me, so please be prepared completely. Just don't depend completely on glassdoor. Go to leetcode, hackerrank, geeksforgeeks and careercup. As for books, cracking the coding interviews is awesome!
+Its not even one day yet, so I haven't heard back from recruiter, but I am not expecting a good result.
+Show Less
+
+Interview Questions
+
+1. What is a mutex, semaphore
+2. What is virtual memory, paging. Why is it required to swap pages, etc..
+3. What is virtual destructor (explain with some code).
+4. The code was pasted in collabedit. Its an easy problem to solve, but only if you understand the problem in 5 minutes. I had about 20 minutes in total. (You might see the interviewer has mixed Java and C++. There is no public/private access specifier. Integer class is only in Java, coding standards are according to Java specifications, but I guess you get the point of the question, so that's not a problem).
+
+/**
+ * Given a nested list of integers, returns the sum of all integers in the list weighted by their depth
+ * For example, given the list {{1,1},2,{1,1}} the function should return 10 (four 1's at depth 2, one 2 at depth 1)
+ * Given the list {1,{4,{6}}} the function should return 27 (one 1 at depth 1, one 4 at depth 2, and one 6 at depth 3)
+ */
+int depthSum (NestedInteger *input, int count)
+{}
+
+/**
+ * This is the interface that represents nested lists.
+ * You should not implement it, or speculate about its implementation.
+ */
+class NestedInteger
+{
+    /** @return true if this NestedInteger holds a single integer, rather than a nested list */
+    boolean isInteger();
+
+    /** @return the single integer that this NestedInteger holds, if it holds a single integer
+     * Return null if this NestedInteger holds a nested list */
+    Integer getInteger();
+
+    /** @return the nested list that this NestedInteger holds, if it holds a nested list
+     * Return null if this NestedInteger holds a single integer */
+    NestedInteger *getList();
+    int getCount();
+}  
+1 Answer
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jun 3, 2015 Helpful (5)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took a week. I interviewed at LinkedIn (Mountain View, CA) in May 2015.
+
+Interview
+
+The recruiter will call you first and ask you whether you are interested their job opportunities. Then you submit your resume from the email link which sent by the recruiter. Recruiter will ask you a proper time for the phone interview. The interview is one hour. It will have two engineers from Linkedin ask you some questions.
+
+Interview Questions
+
+Find out at least one 3 elements array in a given integer array. The 3 elements have to be able to form a triangle.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+May 29, 2015 Helpful (10)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Francisco, CA
+Declined Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn (San Francisco, CA) in May 2015.
+
+Interview
+
+Recruiter reached out to me and set me up for an interview. Emailed me prep material for the phone interview. I scheduled phone interview for a month later date.
+there were 2 engineers on the phone call. Their introductions were short and I kept mine short enough to get more time for the coding problem. They used collabedit for reviewing/sharing code.
+There was only one coding question followed by wrap up time so I can ask them questions.
+Entire interview lasted 1 hour. They asked me to explain my solution and it's space/time complexities. Asked me how I can improve it. (99% of the time the answer to improve time complexity is to compromise on space complexity. That means introduce a freaking hashmap in your solution).
+Overall decent experience.
+Show Less
+
+Interview Questions
+
+Given two words as Strings, determine if they are isomorphic. Two words are called isomorphic if the letters in one word can be remapped to get the second word. Remapping a letter means replacing all occurrences of it with another letter while the ordering of the letters remains unchanged. No two letters may map to the same letter, but a letter may map to itself.
+
+*
+ * Example:
+ * given "foo", "app"; returns true
+ * we can map 'f' -&gt; 'a' and 'o' -&gt; 'p'
+ *
+ * given "foo", "boa"; returns false
+ * we can map 'f' -&gt; 'b', 'o' -&gt; 'o', we can't map 'o' -&gt; 'a'
+ *
+ * given "bar", "foo"; returns false
+ * we can't map both 'a' and 'r' to 'o'
+ *
+ * given "turtle", "tletur"; returns true
+ * we can map 't' -&gt; 't', 'u' -&gt; 'l', 'r' -&gt; 'e', 'l' -&gt; 'u', 'e' -&gt;'r'
+ *
+ * given "ab", "ca"; returns true
+ * we can map 'a' -&gt; 'c', 'b' -&gt; 'a'
+ */  
+4 Answers
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+May 13, 2015 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took 1 day. I interviewed at LinkedIn (Mountain View, CA) in April 2015.
+
+Interview
+
+I had my first phone interview with them. They seemed like nice poeple. But one of them was hired at linkedin a month before my interview and the other interviewer around 6 month before. I checked their background and they were almost new graduates from BS!! I have MS and couple of years of working experience. They asked me about my project and when I started talking about Weka algorithm and how I used it in my project, they were constantly asking what is WEKA?!! I was surprised that they didn't even know about that. Then they asked two questions. First was too simple, but they were trying to exaggerate it. I solved it with two different approaches. The second one was complicated but the issue was my internet connection got lost at the beginning of that and I couldn't resolve the connection issue so couldn't code it but provided the solution verbally and explained to them that I didn't at all expect internet connection issues. The interviewer said my verbal solution is correct. I was so mad at Comcast at that time, we switched to a faster service and it apparently became worst.
+around 2 weeks later I got an Email from recruiter that I wasn't the best match! Seriously, they didn't even give me a second chance even though they knew it wasn't my fault. Anyway, overall being judged by a person who was hired a month ago at Linkedin right after collage, I didn't expect much more than this.
+Show Less
+
+Interview Questions
+
+1. I don't remember exactly what the question was but the interviewer was looking for a solution in which instead of any extra data structure you were going to utilize the input itself which was an array and modify the input itself to save some space.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+May 16, 2015 Helpful (6)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn in May 2015.
+
+Interview
+
+I was contacted by recruiter via LinkedIn. After chatting and getting a feel, a phone screen was set up. Interviewer went over my background before starting the interview. The questions were very easy. See questions below. Like most mentioned, the questions are on Glassdoor. They recycle through the same questions. To be honest, i don't know what LinkedIn wants. Even with the most optimal best solution all explained out step by step covering all edge cases, they still said no after the phone screen. It's another thing if you have a doubt about missing something. I even wonder why they waste some of our times if they are not genuinely interested.
+The recruiter was great and fast about everything. I interviewed with LinkedIn a couple of years ago and ironically, it was the same story.
+Personally, I have just decided to never interview at LinkedIn again. I guess i am just not LinkedIn material. Maybe that's a good thing :) On to the next, life is short....
+Show Less
+
+Interview Questions
+
+Question 1: public double pow(double a, int b) ;
+Question 2: 2sum question  
+
+
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Easy Interview
+Interview
+
+45min regular technical phone screen. Questions were from basic programming concepts and linux commands. two interviewers present on the phone screen. I had to run behind the recruiter to get the result and they didn't provide any feedback on interview performance.
+
+Interview Questions
+
+2 technical questions  
+1 Answer
+toughest technical challenge faced  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Mar 25, 2015 Helpful (6)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through an employee referral. I interviewed at LinkedIn in March 2015.
+
+Interview
+
+Employee Referral
+4+ weeks
+two phone interviews each with two engineers
+engineers are helpful
+to be honest all their interview questions can be online here in glassdoor and in careercup
+just be prepared and dont stress over it , i know it's easy to say but hard to do :)
+
+Interview Questions
+
+First Interview
+- print tree level by level
+- very easy one that i don't remember :)
+
+Second Interview
+- print factors for number ( you can find the same question with explanation here in glassdoor)  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Apr 10, 2015 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied online. The process took 2+ months. I interviewed at LinkedIn in February 2015.
+
+Interview
+
+Applied via Linkedin. Approached by a recruiter to schedule an interview. I had 5 years of software development experience, and there were two interviewers, one with 9 months of work exp and other one with 2 years of work experience. The style of interview was immature and they asked me silly programming questions, and pointing out syntax errors and indentations. I got completely frustrated as I started giving more importance to syntax than the logic.
+Show Less
+
+Interview Questions
+
+Merge two sorted lists.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Apr 8, 2015 Helpful (18)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took 2 weeks. I interviewed at LinkedIn (Mountain View, CA) in March 2015.
+
+Interview
+
+Interviewer reached out on LinkedIn. I wasn't ready to move ahead with the process at that point of time. We followed up when I had a pending offer and decided to move ahead with the process.
+There were 2 phone rounds which covered standard interviewing questions followed by an onsite round. The onsite round was a day of 5 interviews along with a lunch interview with one of the engineers.
+Out of the 5 onsite rounds, 2 were meant to be coding rounds and 1 was meant to be a design round.
+The remaining 2 rounds surprisingly were meant to be technical discussions about my work experience and more architecture.
+The coding rounds were simpler than the phone interviews. The fact that the 2 technical interviews virtually covered the same architecture of my work experience was staggering in spite of me raising it with the second interviewer.
+The engineers I met were well-mannered and polite. However, the process in general wasn't the most organized one.
+Show Less
+
+Interview Questions
+
+Write a function to find the power of a^b
+Find the minimum distance between 2 words in a dictionary
+Evaluate a post-fix expression
+Given an array of numbers , replace each number with the product of all the numbers divided by the number at that index without using the division operator  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Apr 3, 2015 Helpful (8)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn in April 2015.
+
+Interview
+
+Got contacted by HR on LinkedIn. Didn't have a call with her, just a few questions over mail.
+Standard question with a bit of a difference. Prepare well for the recently asked questions, LinkedIn repeats questions in telephonic interview.
+
+Interview Questions
+
+public interface Triangle {
+
+    /**
+     * Three segments of lengths A, B, C form a triangle iff
+     *
+     * A + B &gt; C
+     * B + C &gt; A
+     * A + C &gt; B
+     *
+     * e.g.
+     * 6, 4, 5 can form a triangle
+     * 10, 2, 7 can't
+     *
+     * Given a list of segments lengths algorithm should find at least one triplet of segments that form a triangle (if any).
+     *
+     * Method should return an array of either:
+     * - 3 elements: segments that form a triangle (i.e. satisfy the condition above)
+     * - empty array if there are no such segments
+     */
+    int[] getTriangleSides(int[] segments);
+}  
+1 Answer
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Mar 16, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 1 day. I interviewed at LinkedIn (Mountain View, CA) in March 2015.
+
+Interview
+
+One programming phone interview, 2 questions. Onsite interview was the longest I've ever been to, but they did a great job of making it fun, and I was not tired by the end.
+
+Interview Questions
+
+2 programming sessions, 3 design sessions, and 1 behavior session.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Feb 20, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Los Angeles, CA
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took 4 weeks. I interviewed at LinkedIn (Los Angeles, CA) in January 2015.
+
+Interview
+
+The first phone call talks about the my projects and experience. And it took a few days before I got a technical phone interview scheduled in three week. The technical interview happened on collabedit. It was not very hard. The coding questions were kind of typical. I am still waiting for the next technical interview.
+
+Interview Questions
+
+The first is maximum consecutive sum of array, and the second one is to print a tree in level order.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Mar 6, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Average Interview
+Interview
+
+One telephonic interview followed by onsite. The onsite interviewers were very professional. They had good set of questions to ask, the niter process took around 3-4 weeks but you ca request to expedite the process. The interviewers in general make you at ease. There will be typically two interviewers in a panel.
+
+Interview Questions
+
+The questions are related to data structures and algorithm.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+Jan 15, 2015 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Average Interview
+Application
+
+I applied through a recruiter. The process took 2 weeks. I interviewed at LinkedIn in November 2014.
+
+Interview
+
+I was reached by a recruiter via LinkedIn. The phone interview was scheduled on the next week. They asked me two technical questions similar to those online questions. Not hard. I was not well prepared so didn't get an offer.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jan 12, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied online. I interviewed at LinkedIn.
+
+Interview
+
+Initially talked to HR. She asked which all companies I was interviewing with and few other common questions. Then got one technical phone interview through collabedit. Asked about Least common ancestor using parent pointer. They don't even care to reply if you are not selected. Even if you follow up they won't respond.
+
+
+
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took 2+ months. I interviewed at LinkedIn in January 2015.
+
+Interview
+
+I was contacted by a LinkedIn recruiter a few months ago (by November, 2014 I think) about a position in Software Engineering area. After the first phone screen (non technical) I was scheduled my first technical phone interview, I decided to take 2 months to get ready and warming up in Algorithms and Data Structures. Finally I finish my first interview very disappointed (with my self) because the interview question was so easy that I could have wrote the solution in less than 15 minutes and I spent almost 45, thanks to my nerves. The interviewer was polite, well explained and called on time, I have no complains about that.
+Show Less
+
+Interview Questions
+
+Write a function to determine if a string is a number without using any built-in function.  
+2 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Jan 7, 2015 Helpful (6)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied online. The process took 3 weeks. I interviewed at LinkedIn.
+
+Interview
+
+The interview took about a month. Two rounds of telephone interviews, both of which are about coding. The first phone interview was ok but the second one was not so pleasant experience in that the interviewers did not seem to care about what my thinking process was. Though I described my thoughts they didn't seem to follow; there were once or twice I talked about an idea but they were not so open to really think of what I said, instead, they gave some hints that are not useful at all, even worse interrupted my thought.
+I actually saw these problems before on careercup websites but didn't practice them. So was not able to come to the 'correct' solution (well I think that's what they want, because they were not really eager to interact) in 40 minutes.
+Show Less
+
+Interview Questions
+
+Given a maximum line length, left right justify a long string. (make spaces evenly distributed between adjacent words)  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Dec 23, 2014 Helpful (9)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through college or university. I interviewed at LinkedIn.
+
+Interview
+
+(For a summer internship)
+I applied through my undergraduate college. Went through a phone screening and a 1-hour phone interview, and then visited the Mountain View campus for three interviews (2 technical) . I got an offer about a week after the on-site interviews. Everyone was really friendly and had lots of good things to say about the internship program!
+
+Interview Questions
+
+- level-order print a binary tree
+- find common ancestor of two nodes in a binary tree
+- find coverage of a bunch of intervals.... like given [1,4),[-2,3),[9,10) return 7
+- given an array of integers A[1..n], make a new array B[1..n] where B[i] is the product of everythimg in A excluding A[i]. O(n) solution without division.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Dec 16, 2014  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Difficult Interview
+Application
+
+The process took 1+ week. I interviewed at LinkedIn.
+
+Interview
+
+Standard engineering interview process: initial call with recruiter, then scheduled for technical phone screen. Had call with two interviewers in the same call which made the communication pretty confusing (think one was just training to become interviewer).
+
+Interview Questions
+
+Implement a busy queue.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jan 27, 2015 Helpful (6)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee
+Accepted Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through college or university. The process took 2+ months. I interviewed at LinkedIn in December 2014.
+
+Interview
+
+The most professional and comfortable interviewing experience I've ever had.
+I gave my resume to a LinkedIn engineer at my university career fair, and also applied online. A few weeks later, a recruiter called me and discussed what I was looking for in an internship. He then set up my first round technical interview: a single 1-hour phone interview, coding on collabedit. A few days after the first interview, my recruiter scheduled my second round technical interview: two 1-hour phone interviews, same format. The recruiter was very friendly and helpful in giving me advice and insight into the interviews. All three engineers I talked to were patient with me as I worked through the coding problems.
+If I had to say anything negative about the experience, it would be the length (6 weeks between last interview and offer letter). However, the recruiter was quick to respond to my emails and was willing to take the time to explain exactly what was going on in the process.
+Show Less
+
+Interview Questions
+
+Be sure to think out loud, and don't be afraid to ask for hints if you are stuck. Be comfortable coding without an IDE. They'll most likely have you talk out a solution outline before you start writing any code.
+
+(hint: always consider recursion)  
+1 Answer
+Negotiation
+
+If you feel the need to negotiate with LinkedIn, check your greed :)
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jan 28, 2015 Helpful (3)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 3 weeks. I interviewed at LinkedIn.
+
+Interview
+
+A recruiter reached out to me a few months ago asking if I was interested in possibly pursuing an opportunity in working with LinkedIn.
+Two phone screens after that, all technical and took place over a site like collabedit. The interviewers were nice, and the questions were not too hard; they get everything from a test bank.
+Was invited for an on-site round after that. During the on-site round, you go through 6 interviews; two based on coding, one on technical communication, one on a project you worked on before, and one on design. Make sure you prepare for the coding section! You don't have freedom to answer the question in any way you wish; you have to go by the function headers they provide for you.
+Show Less
+
+Interview Questions
+
+Everything they ask can really just be found online. There is no real difference in difficulty between the phone and in-person sections.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jan 30, 2015 Helpful (12)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Difficult Interview
+Application
+
+I applied online. I interviewed at LinkedIn.
+
+Interview
+
+Made it all the way to the onsite. Every interviewer seemed either not really personable, rude, or weren't very interested in me. The first interview had to be rescheduled because they forgot when my interview was supposed to be scheduled. I got reasonably hard questions.
+
+Interview Questions
+
+Given an input string and a target string, find the minimum substring of the input string that contains all of the characters in the target string  
+9 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Feb 15, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Sunnyvale, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 4+ weeks. I interviewed at LinkedIn (Sunnyvale, CA) in January 2015.
+
+Interview
+
+HR contact me through linkedin, scheduled 2 phone interviews, pass both and move to the onsite interview, which consist of 6 back to back interviews, starting from 10am till 4pm. There are 3 technical interviews(coding skill, algorithm, system design) and 3 non-technical interviews(communication skills, lunch, and talk with the hiring manager)
+Generally speaking all interview questions are not super hard and most of them are reasonable, the only thing that may affect your performance is that there's no time to rest, it's basically 6 hours back to back interview except the lunch. The lunch is lead by a senior enginner, we did a lot of chatting, which made me even more exhausted.
+I'd suggest that if Linkedin can setup a 30min break time after lunch, that would help the candidates to relax and gain some stemina back because the 2 interviews after the lunch are both technical.
+Show Less
+
+Interview Questions
+
+will not disclose due to NDA  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+Feb 19, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took a week. I interviewed at LinkedIn (Mountain View, CA) in February 2015.
+
+Interview
+
+Interview process started by a recruiter contacting me on LinkedIn and scheduled a phone interview. The interview questions weren't hard, the interviewer was expecting the solution to be in certain fashion, when i am writing code and explaining him a different way I do it, he doesn't want to hear, kept interrupting me with his questions before I finish what I have to say, which is very annoying and I lost my interest in explaining it to him and I told him I will write the code and if it doesn't work we can discuss, looks like he wasn't interested in code until he understood the logic. So, all in all, it wasn't a great interview.
+Coming to the LinkedIn's recruiting part. They suck, absolutely bad hiring process and communications. 3 years ago I interviewed for LinkedIn and I didn't get through their phone screen, once phone screen is done the recruiter never gets back to you with anything. I emailed him multiple times, no reply, I called him, no reply and after 5 weeks, he replies with "we are not interested and will not be moving forward". LinkedIn needs 5 weeks to get feedback for your phone screen sounds "reasonable time". This time I didn't bother to even ask the recruiter about feedback.
+I personally decided not to interview with them anytime in future again.
+Show Less
+
+Interview Questions
+
+Nothing hard, 1 array related question and 1 modified binary search question  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Feb 5, 2015 Helpful (5)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Easy Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn.
+
+Interview
+
+I got this interview through a recruiter through LinkedIn website. It was a one hour phone interview. They asked about my work in the first 10 minutes. The interviewers were nice, they were on time and they described their role in the company. They didn't talk much during the interview. The recruiter replied by email after two days. After writing the code they asked me about test cases.
+
+Interview Questions
+
+They asked to write a function that takes a string and check if it is a number. The second question was given a sorted array that has been rotated, find a number in that array {6,7,1,2,3,4,5}  
+
+
+
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took 4+ weeks. I interviewed at LinkedIn in January 2015.
+
+Interview
+
+Got contacted by the recruiter and schedule two rounds of technical phone interviews. first round was on time, but the second round the interviewer canceled in the last minute, and no one told me until I waited over 30 minutes. after the second round I got a thank you email. the recruiter and one of the engineer had a heavy accent which made things a little more difficult. the interview process was the same, first the engineer will tell you what their role is at LinkedIn and they will ask you about a most interesting recent project. they seemed to ask it because they were told to and not because they wanted to know about it. After that it was typical coding algorithm problems. some were harder than the other. If you took too much time solving one question and ended up not getting multiple questions it probably means you will not proceed to the next round. expect to solve two to three problems.
+Show Less
+
+Interview Questions
+
+1) given a target and a sorted array, find the element that is strictly larger than the target.
+i.e. {a,c,d,e} b output: c
+
+2) find the max sum of continuous sequence in the array.
+{2,-1,3,-5,3} output: 4
+
+3) given a DNA sequence find pattern (hardest problem that you probably won't be expected to finish)
+
+4) given intervals find overlap and return the length. (it is surprising how easy to make mistakes in this one, I ended up spending too much time fixing my own bug)  
+1 Answer
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Oct 6, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn in September 2015.
+
+Interview
+
+The process consisted of a phone screen, then a technical phone interview, and then I was brought onsite. I was most impressed by the professionalism of all the recruiters. They are definitely looking for candidates with a good amount of experience since their program is relatively small compared to other companies like Facebook, Google, Microsoft, etc.
+
+Interview Questions
+
+Signed a NDA but a lot of the questions listed here are the right idea.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 8, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn.
+
+Interview
+
+A recruiter contacted me about a week after replying, he was really kind and made the process very straightforward. It started with a phone screen with the recruiter and then I scheduled a technical interview with one of the engineers. I didn't pass that round, but the recruiter was very nice about getting the news to me.
+
+Interview Questions
+
+Breadth first search  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Oct 16, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took a week. I interviewed at LinkedIn (Mountain View, CA) in October 2015.
+
+Interview
+
+Over the phone with a shared text editor from a testing site. The interviewer started with general experience questions and moved onto technical questions about items on resume. Then there was a basic question about looping through an array which I answered verbally then wrote up the solution and discussed alternatives. The second question was more difficult to get an optimal solution and involved iterating on a basic solution. The interview ended with me asking a set of questions.
+Show Less
+
+Interview Questions
+
+Count the number of occurrences of an element in a sorted array  
+7 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sep 30, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied online. The process took 2 weeks. I interviewed at LinkedIn in November 2014.
+
+Interview
+
+3 rounds of back to back phone interview and each round there are 2 engineers on the employer side. The interview questions are not difficult. But sometimes the questions themselves are tricky and you have to make sure you really understand the problem to solve.
+
+Interview Questions
+
+How to implement a non-blocking queue for multi-threading?
+How to implement a non-blocking task scheduler for multiple tasks?  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Sep 30, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. The process took 2 weeks. I interviewed at LinkedIn (Mountain View, CA) in July 2014.
+
+Interview
+
+There are usually 1-2 rounds of phone interview. After you pass them, then, you will have to go to an on-site interview which usually last one day. There are 5 modules in total for the onsite interview questions. If everything goes well, then you will be matched with a team to see if you like it, and negotiate the salary.
+
+Interview Questions
+
+Design an email client android app.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sep 27, 2015 Helpful (5)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took a week. I interviewed at LinkedIn.
+
+Interview
+
+Contacted by a recruiter through LinkedIn itself, scheduled a small talk about my experience and interests, recruiter was very nice and helpful. Then scheduled an interview call with two more technical interviewers from different teams using an online review-coding portal, first they introduce themselves, then you need to talk a bit about what you do and your past experience and then move to the coding problems, mostly related to algorithms. After that call the process is to interview on-site where you could have from 3 to 5 interviews.
+Show Less
+
+Interview Questions
+
+Not into specifics but questions were related to creating a function that behaves similar to Integer helper methods (i.e. toString, parseInt, valueOf) and another related to searching a number in an array  
+3 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sep 15, 2015 Helpful (5)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 4 weeks. I interviewed at LinkedIn (Mountain View, CA) in September 2015.
+
+Interview
+
+Had one technical phone screen which was easy. Then was called onsite for a set of 5 rounds. It was a long day of interviews. The interviewer in the first algorithm round had a fixed solution in his head and could not accept any other solution and was always trying to force me to move towards how he thinks the problem should be solved rather than what I was doing, he had no interest in my solution and I know my solution was right because I had solved that problem before and had confirmed it with online solutions and new all the ways of doing it. The second algorithms round was a dynamic programming round and to my surprise one of the interviewers had no clue about DP and was constantly arguing with me and the other interviewer saying that my solution was wrong. However the first interviewer understood my solution and agreed with what I was doing and was trying to explain to the other interviewer that my approach was different but most optimal( I was doing a bottom up DP where as he only knew how to do Top down which is recursion with memoization). After 30 mins of explaining to the second interviewer, he still couldnt get what is bottom up DP. I was very disappointed with Linked in on this. They should send interviewers who know their stuff or atleast what they are asking..lol. The design round was not a typical design round, instead of having a discussion with what's right and wrong with my design, he just asked me a series of questions and got done with the interview, I felt as if he was just assessing my answers based on what he had in mind. The manager round was good and relaxed. The last round i.e technical communication doesnt make any sense as everything is already covered in the manager round. I guess I just had a bad day on my luck with weird interviewers
+Show Less
+
+Interview Questions
+
+Everything is already on career cup, nothing new.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+Sep 21, 2015 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through an employee referral. The process took 2 weeks. I interviewed at LinkedIn (Mountain View, CA) in September 2015.
+
+Interview
+
+I was referred by a friend. Firstly I had a phone screen, and was asked about a string related question and a question about reading logs.
+Then I was scheduled an onsite interview, the design question is hard because I never had this kind of question before.
+the whole process is pretty fast and the overall experience is very good.
+
+Interview Questions
+
+design question is hard for me  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sep 1, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee
+Accepted Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. The process took 3 weeks. I interviewed at LinkedIn in November 2014.
+
+Interview
+
+Recruiter phone call, one technical phone screen, and if you're good enough there, two more technical phone screens. This is for people located far from LinkedIn (so those in the Bay Area will experience an on-site interview).
+
+Interview Questions
+
+Cracking-the-code-interview-type questions. They also have LinkedIn specific ones, though, but these are also similar your ordinary software engineering interview questions.  
+
+
+
+	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied online. The process took a week. I interviewed at LinkedIn in August 2015.
+
+Interview
+
+I applied online and got contacted by recruiter the next day. He was very nice and quickly arranged a phone screening. The interviewer called me and asked me two questions - two sum problem, and parenthesis matching. I missed to handle one edge case and the next day got a rejection call.
+The problem which I see here is that in one of the questions, I was talking about Java String internals, how a String is backed by a character array, and she had no idea of what I was talking about. That might have offended her. I have solved two sum problem and parenthesis matching problem many times before and I do not expect to get a rejection, but I got it. I am a PhD and have 4 years of experience.
+Show Less
+
+Interview Questions
+
+1. Two sum problem
+2. Parenthesis matching  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Aug 4, 2015 Helpful (63)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Interview
+
+It took a while to get the interview. However, once the interview was setup it was pretty fast. I had one phone screen and was not asked for second phone screen. Phone screen questions are very challenging but all are from glass-door. My advice to you is just solve the career-cup or glass-door problem and you are going to be fine. Binary tree, array, number format.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 31, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+The process took 4 weeks. I interviewed at LinkedIn (Mountain View, CA) in June 2015.
+
+Interview
+
+Applied through Linkedin. Got technical phone interview - 2 questions, one on recursion and the other standard programming question. 6 interviews at onsite(1 algo,1 programming,1 design,1 manager,1 lunch/cultual fit,1 tech discussion). Interviewers were nice. If you've to run behind your recruiter to get a result, it means you haven't got the offer.
+
+Interview Questions
+
+Questions on the algo/programming round at onsite were taken from top 10 questions on Leetcode. If your answer matches the solution interviewer has in mind, you clear the interview, else you don&#039;t (even if your solution is correct). Design round was easy.  
+1 Answer
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Aug 8, 2015 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+Declined Offer
+Positive Experience
+Average Interview
+Application
+
+I applied online. The process took a week. I interviewed at LinkedIn (Mountain View, CA) in July 2015.
+
+Interview
+
+Linkedin is hiring like crazy right now - on the particular random day I arrived, there were at least 10 other applicants hanging around the receptionist's desk. They sent me a solicitation on linkedin (no surprise), and I followed up and had a technical phone screen quickly scheduled. They then flew me out to interview on-site about a week later and put me up in a really nice hotel. They gave me a gift bag on arrival, and the whole process felt really comfortable, which is unusual for an interview. I interviewed with something like 11 people total, some alone, and some in groups of 2. Half of those interviews were about demonstrating programming skills on a whiteboard, the other half were for demonstrating "design" skills (abstractly designing systems). There was a break in the middle for lunch in their giant, excellent cafeteria.
+Show Less
+
+Interview Questions
+
+You have a potentially very-large set of documents, which are potentially very-large, and contain text. For searching these documents, they've been pre-processed into a (very-large) table mapping words to the set of documents that contain each word. E.g.
+
+(word) : (documents (referenced by ID) containing that word)
+Apple: 1, 4, 5, 6, 32
+Banana: 5, 6, 7, 9, 32
+Cantaloupe: 1, 2, 6
+...
+
+Clients will pass in a set of words (e.g. {apple, cantaloupe}), and want the set of document IDs that contain all the words. (e.g. {apple, cantaloupe} -> {1, 6}) Design a distributed system to implement this, bearing in mind that the number of documents, the number of words, and the number of document-IDs-per-word are potentially really, really big.  
+4 Answers
+Show Less
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 10, 2015 Helpful (4)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+Declined Offer
+Positive Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took 4 weeks. I interviewed at LinkedIn (Mountain View, CA) in June 2015.
+
+Interview
+
+LinkedIn's interview process is very transparent. Before every interview, I was given the names and LinkedIn profiles of every person I would speak to. My recruiter also called me before each interview step to discuss the expectations and share a few preparation tips. Even if you don't end up working with them, you'll probably at least come away feeling much more knowledgeable and prepared for technical interviews in general!
+I noticed two unusual aspects about LinkedIn's software engineer interviews:
+(1) Most interviews are 2-on-1, with both interviewers submitting feedback.
+(2) Their coding questions apparently come from a shared company-wide repository. All the coding questions I got were identical (verbatim) to ones that have already been posted here or on other sites. I didn't know this upfront, but I realized it when I looked them up after my interviews.
+My interview process was:
+Technical phone screen:
+- 2 coding questions
+On-site interview:
+- 2 coding / algorithms
+- 1 system design
+- 1 technical communication
+- 1 behavioral / cultural fit (host manager)
+- 1 lunch interview (note: the lunch interviewer does submit feedback too)
+The coding questions were all very easy. I would say they were of slightly below-average difficulty compared to many other major Silicon Valley tech companies. I got the impression that the LinkedIn folks pay much more attention to your communication skills and design thinking than your raw problem-solving ability.
+The technical communication interview was fun. Basically I was asked to talk through one of my previous projects / systems, as if I were orienting a new developer on my team. It felt just like a real engineering discussion at work. Likewise, the host manager interview was really relaxed, focusing mostly on probing my resume and past experience, and the typical behavioral type questions ("tell me about a time when...").
+The system design interview was probably the most challenging aspect of the process. LinkedIn is a web-scale company after all, so you need to have at least some basic familiarity with building distributed systems and making architectural design trade-offs in that context. Of all the components of the on-site interview, I would recommend spending more time preparing well for this one.
+I definitely came away with a very positive impression of LinkedIn. All the interviewers I met were very friendly and smart, and all of them talked about how they loved the highly collaborative culture at LinkedIn. Definitely give these folks a shot if you have the opportunity.
+Show Less
+
+Interview Questions
+
+Can't disclose due to NDA. But as mentioned above, LinkedIn appears to have a shared company-wide repository of coding questions. So if you look around on this and other sites, you'll probably see most of their coding questions in advance. But it seems they're really much more interested in your communication and design thinking skills anyway, not just whether you "solve" a problem.  
+1 Answer
+Reasons for Declining
+
+Received more attractive offer from another major Silicon Valley tech company.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Jul 9, 2015 Helpful (9)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Sunnyvale, CA
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I interviewed at LinkedIn (Sunnyvale, CA) in July 2015.
+
+Interview
+
+I Applied through a recruiter. Recruiter was polite and helpful. Recruiter explained the process and sent some preparation material for reference. After 2.5 weeks one phone round was arranged. Interviewer started by asking a brief introduction, present and past job experience, challenges faced in work etc. Then he asked to solve a coding problem pasted on collabedit. I used python to solve it. Question was not difficult, though I made a small mistake in code. Then he asked If I have any questions for him. Total time of phone call was around 50 minutes.
+Show Less
+
+Interview Questions
+
+Given a nested list of integers, return the sum of all integers in the list weighted by their depth
+For example, given the list {{1,1},2,{1,1}} the function should return 10 (four 1&#039;s at depth 2, one 2 at depth 1)  
+3 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 3, 2015 Helpful (4)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. The process took 2 weeks. I interviewed at LinkedIn (Mountain View, CA) in May 2015.
+
+Interview
+
+Pretty typical interview process. One phone screen with 2 coding problems. Onsite with 5 interviews typically 2 people with one just shadowing another. Be prepared to answer questions from both though.
+
+Interview Questions
+
+One coding question to do with text parsing, nothing too complicated.
+One coding question to do with dynamic programming or greedy algorithm.
+One design question.  
+3 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 23, 2015 Helpful (14)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Neutral Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took 5 weeks. I interviewed at LinkedIn (Mountain View, CA) in July 2015.
+
+Interview
+
+I did a technical phone screen (yes, as all have said, the questions are all from here - just prepare Software Engineer, Senior Engineer and Principal Engineer questions and you will be completely covered). Every coding round has two questions - one easy and one difficult. You will need to answer both of them to move forward. The phone screen was done (Solved both the questions in less than 30 mins) and I was invited onsite. The onsite begins with a tour of the office which is nice. The recruiting coordinator was friendly and nice.
+They gave me a loaner iPad with my schedule for the day. They also gave me a goody bag with a couple snacks and my LinkedIn connection map which was a nice personal touch. I then met with the recruiter for about 15 minutes - general casual talk about my job search. The first round is a host manager round. They question you on each of your prior experiences and ask you why you left that job, what kind of work you did there, how big a team, what was your contribution and so on. The second round is a coding round - two engineers and two questions (all questions are documented in Glassdoor multiple times from others so wont repeat it here). Third is technical communication and you have to explain your project in depth to an engineer - the engineer asks some questions on your decisions so please be ready to explain them. The next was the lunch interview - non technical and casual talk but the interviewer provides feedback on you. Next is a system design round (Again question is already on Glassdoor and is repeated many times - prepare variations of sliding time window system design for big data systems, and you will be able to answer questions here). Next was the final coding round - again two questions. Again just repetitive questions - nothing fancy. One of the final interviewers (he was a Senior SDE) did not know the answer to the question he posed. My code is an exact implementation from CLRS' algorithm book that I had prepared by reading up the question on Glassdoor. He did not get it/even look interested in getting it. His head was buried into his laptop and he could not be bothered into listening to me. He had a co-interviewer who wanted to talk/participate but this guy kept cutting him off - so unprofessional. Until this round, I had no negative impressions on LinkedIn and thought it might be a great place to work but this one guy started making me have my doubts on the quality of engineers there (again, there are bad employees everywhere - even in my current workplace - so it is probably just my frustration).
+On the offer, I did not get one. Overall, I had four good rounds and one bad round. Two things for LinkedIn to note:
+a. Please provide answers to the interview questions to your interviewers in addition to the questions from the question bank, so they know the answers to at least the questions they are asking and not waste people's time.
+b. When I am asked to provide interview feedback on the loaner iPad at the end of the interview, please ask interviewers to step outside.
+A shout out to the recruiter/sourcer and coordinator - Extremely professional and organized.
+The recruiter also gave me feedback on my interview performance on their own accord that the only negative feedback was the last coding round. The rest supposedly went well and it was a narrow miss. So one bad round could impact you a big deal..
+Show Less
+
+Interview Questions
+
+All questions are already on glass door. Just make a list of all the questions and answer them.  
+3 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+May 3, 2016 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied online. I interviewed at LinkedIn in April 2016.
+
+Interview
+
+I interviewed with LinkedIn for a software engineering position in April. My interview experience was mixed; some of the interviewers came across as knowledgeable and articulate, while others were one or the other. There were times when the interviewer's poor communication skills hindered my ability to have a meaningful discussion with them. Overall, the interview process at LinkedIn left me with mixed feelings due to a lack of consistency in the quality of the interviewers. I hope they fix this, because it seems like a great place to work.
+Show Less
+
+Interview Questions
+
+Describe a project you worked on  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Apr 16, 2016  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 3 weeks. I interviewed at LinkedIn (Mountain View, CA) in November 2015.
+
+Interview
+
+1 round design; 2 rounds algo + data structure; 1 round tech communication; 1 round HM
+Tech questions were something very common. I killed them quickly. The HM gave me a very high level question like how to backup between two servers. no assumption was given. no guidance. I had no idea what he wanted, and he just kept smiling. I'd already known what would happen at that moment. Bad experience. Advice: try to avoid those kind of HMs who plan to hire their relatives. Comparing to FB, the interview culture here is very different.
+Show Less
+
+Interview Questions
+
+typical algorithms questions, your project.  
+
+
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 4 weeks. I interviewed at LinkedIn (Mountain View, CA) in October 2015.
+
+Interview
+
+I interviewed to many top companies in Silicon Valley, but I must say LinkedIn gave the best interview experience to me.
+Process went as follows:
+- Recruiter contacted me via LinkedIn to see if I was interested in working for LinkedIn
+- I interviewed for Mobile Software Engineer (Android)
+1st Phone Screen:
+A Coding exercise on Collabedit. Very friendly interviewer.
+Things worked out fine, so they decided to move forward for an onsite with me. They booked nice hotel and rental car. My recruiter called in the morning to check on me and give last minute inspiration talks. I arrived at their office and checked in at the reception. My recruiter came and gave me a campus tour. Campus gave a good positive feeling. Then I was brought to an interview room that was reserved for me. On the White board they had written "Welcome 'In' *my_name*! You got this". There was a nice goodie bag kept for refreshments that I might need the whole day.
+1st round: Android coding challenge on my laptop
+2nd round: Design question
+3rd round: Technical OOP/ Datastructures
+Lunch.
+4th round: Interview with hiring manager
+5th round: Technical OOP/ Datastructure/Android
+6th round: Design
+After my last interview my interviewer dropped me till my car. My recruiter called me again to check on me.
+Show Less
+
+Interview Questions
+
+Q: Was asked a couple of design questions which i found were tough. The questions will be open ended and vague, but that'll be the real test.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Mar 3, 2016 Helpful (6)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took 1 day. I interviewed at LinkedIn in March 2016.
+
+Interview
+
+Classical interview process, phone + onsite. The phone interview was with 2 guys, one senior and one middle level, the unusual thing was that interviewer was the middle level sde.
+I provided really short answers to first two questions and was rejected, I guess I should be going back and study Assembler and networking to pass LinkedIn interview next time in 1 year.
+
+Interview Questions
+
+TCP, UDP what is it ? What is the difference ?  
+1 Answer
+Tell me about virtual memory, what it is user for ?  
+1 Answer
+What do you know about inner classes ?  
+1 Answer
+Coding problem to reformat input string.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Mar 2, 2016  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee
+Accepted Offer
+Positive Experience
+Average Interview
+Interview
+
+Meet with 6-7 people, there are coding/algorithm questions, design questions and behavior questions. The overall experience is nice and people are smart and friendly. People might asks some unexpected algorithm problems which is challenging, but it is good discussion.
+
+Interview Questions
+
+coding/algorithm questions  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Mar 6, 2016 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 4+ weeks. I interviewed at LinkedIn (Mountain View, CA) in January 2012.
+
+Interview
+
+There was on phone screen round and then I was called for onsite. Onsite Interview had 5 different interviews with most of the interviews being done in pairs (Two interviewers per pair)
+
+Interview Questions
+
+For phone Screen :
+- Recursive Depth of nested integers
+- Find the power of a number
+
+For Onsite :
+Coding :
+- Add/Delete from binary tree
+- Find common ancestor in binary tree
+- Blocking Queue
+
+Systems Design :
+- Design the Hangman game. The focus was on architecture of the system (including API's, backend storage etc.)  
+Answer Question
+Negotiation
+
+Recruiter was very well to work with. He negotiated lot of stocks with their HR on my behalf, more than what I was expecting.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Mar 12, 2016  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in San Francisco, CA
+Accepted Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 6 weeks. I interviewed at LinkedIn (San Francisco, CA).
+
+Interview
+
+Phone screen or in-person one hour first round. On-site six hour second round (five one hour interviews plus lunch with a potential colleague). Once approved by Hiring Committee, meet with potential hiring managers. If you and the hiring manager are happy with the match, an offer will be made. Once a formal offer is made, you have only 48 hours to decide.
+
+Interview Questions
+
+I was asked not to disclose interview questions.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Apr 3, 2016 Helpful (4)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+I applied online. The process took 6 weeks. I interviewed at LinkedIn in January 2016.
+
+Interview
+
+Applied in first week of Jan 2016, Got initial screening call from recruiter after 3-4 days only. After that she setup first technical phone interview with two interviewers. It contains introduction, resume discussion followed by two technical coding algorithms/data structures questions. After 4 days I heard back from them and they want to setup second interview round. It is the same like previous one with two interviewers only and same type of coding questions. After all, I had to wait for a long time as they took a long time to give me an offer after final interview. I got offer after 1 month of second/final interview.
+Show Less
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jun 13, 2016  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Francisco, CA
+Declined Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 3 days. I interviewed at LinkedIn (San Francisco, CA) in October 2012.
+
+Interview
+
+2 Phone Screens and a coding test. The first phone screen was general and did not discuss technology. The second phone screen asked basic CS questions like the difference between a heap and a binary tree and about certain common design patterns often used by Java Programmers.
+Then there was a fairly difficult programming test, that the person who provided it seemed to imply must be completed in Java but it turns out choice of language doesn't really matter. I wish I had known that, it would have been much easier to complete it in a higher level language and one I was more familiar with.
+Show Less
+
+Interview Questions
+
+Create a stream processing app  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Jul 7, 2016 Helpful (5)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Francisco, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied online. The process took 1+ week. I interviewed at LinkedIn (San Francisco, CA) in June 2016.
+
+Interview
+
+They've sent me very detailed emails about what to expect from the interview. The interview was 6 hours, including 1 hour lunch. Only the hiring manager entered solo, all other interviews were group of 2 people. 1 coding, 1 architecture, 1 analytic thinking, 1 about my previous company and hiring manager.
+
+Interview Questions
+
+How to implement a stack adding 2 more functionality to a regular Stack:
+1. peekMax
+2. popMax  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+Oct 24, 2015 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took a week. I interviewed at LinkedIn in April 2015.
+
+Interview
+
+LinkedIn recruiter reached out to me on LinkedIn :)
+Phone interview was scheduled for the following week. Recruiter sent me LinkedIn profiles of interviewer. As mentioned my multiple other candidates, they usually have 2 person on the telephonic interview. 2nd person is usually shadowing the main interviewer.
+I received a phone call at the scheduled time and was given an algorithmic problem. I started discussing my approach and had a working solution with good complexity. The interview kept pushing me towards his solution even though it was not an improvement on my solution in terms of complexity. I did not push enough to keep my solution and tried to implement the approach suggested by interviewer. There wasn't enough time to complete the solution and I was stuck in between since I did not understand clearly the direction he wanted me to go.
+This was pretty bad, that interviewer was so adamant around directing me towards his solution. He was pretty rude as well and did not take time to understand my solution at all. I have interviewed with LinkedIn before (during my graduation) and was really bad experience there as well. The last time I even heard the other interviewer laughing as I was writing my solution.
+LinkedIn, you are a great engineering company and I really like some of the open source projects you have, but I would never want to work with arrogant and rude people on team. I hope this gets communicated back to interview panel.
+Show Less
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Oct 25, 2015 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Neutral Experience
+Average Interview
+Application
+
+I applied through college or university. I interviewed at LinkedIn in October 2015.
+
+Interview
+
+Linkedin came to my college during a career fair which was when I handed my resume to them. Was contacted the next day for a 1-hour long in person interview. The interviewer was fairly nice when talking to but gave off an impatient vibe while I was coding which stressed me out even more. Still waiting for response.
+
+Interview Questions
+
+Not sure if I'm allowed to say but it had to do with searching a string.  
+
+
+Software Engineer Interview
+Anonymous Interview Candidate in San Francisco, CA
+No Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through a recruiter. The process took 6 weeks. I interviewed at LinkedIn (San Francisco, CA) in October 2015.
+
+Interview
+
+Applied online and emailed the campus recruiter directly. Phone screen was technical and required coding on CoderPad. Onsite was an "Invitational", with about 15 other candidates. Interview questions were hard, but I think I got most of them right. After the onsite interviews, I waited for two weeks without a response until I finally sent a reminder email. I got a phone call a couple days later saying that I wouldn't be moving forward in the process.
+Show Less
+
+Interview Questions
+
+Design the services behind an Amazon product page  
+Answer Question
+Given a tree where every right node is a leaf, meaning that it can only extend on the left side, invert it such that the leftmost node is now the root, and all of the previous left nodes are now on the right side. The former right nodes will be on the left side.  
+4 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Other Interview Reviews for LinkedIn
+Oct 30, 2015 Helpful (7)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+Declined Offer
+Positive Experience
+Easy Interview
+Application
+
+I applied through a recruiter. The process took 2 weeks. I interviewed at LinkedIn (Mountain View, CA) in September 2015.
+
+Interview
+
+I am an experienced engineer. I was contacted on LI by a LI recruiter, for a LI job. Pretty funny. Anyway, the phone interview was pretty easy. First question was a popular question I have seen before, which I coded up quick. The second one was a new question. I solved it using recursion, and finally realized that I could use DP to make it more efficient. Refactored it using DP, and the interviewer was very happy. I was invited to the onsite a couple of days later.
+Onsite was 5 modules. 2 modules were coding/algorithms, which were more in-depth than the phone interview. Coding and algorithms is my strength though, and I did very well on those. The next module was system design. I was really lucky to get an easier design problem (I'm not good at these stupid system design questions). I think I did alright. The next one was a communication module, where I talked about my favorite project from my resume. The last was a host manager module, where we chatted with each other and got a better understanding of myself and the position/company.
+Overall it was a very pleasant experience. I got an offer a couple of weeks later (which was pretty good), but I declined because I had another offer from Google.
+It is basically a standard algos+coding, design, and resume/behavioral interview. I think LI did a good job hitting all those vectors. I was happy with what I saw (engineers looked happy, everyone was upbeat). I can see myself working here if I didn't have the Google offer.
+Show Less
+
+Interview Questions
+
+Recursion, DP, BST, greedy, etc.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Nov 1, 2015 Helpful (163)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee in Mountain View, CA
+Accepted Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn (Mountain View, CA).
+
+Interview
+
+First had a phone interview with 2 engineers. Two basic questions were asked.
+Then invited to an onsite in Sunnyvale and Mountain View. The onsite consists of 4 rounds -- two coding (data structure + algorithms; 2 questions per round) + one system design + one manager (/behavior) round. Got an offer in about two weeks.
+
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Join the LinkedIn team See Our Latest Jobs
+Nov 3, 2015 Helpful (1)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in San Francisco, CA
+No Offer
+Neutral Experience
+Difficult Interview
+Application
+
+I applied online. The process took 3 weeks. I interviewed at LinkedIn (San Francisco, CA) in September 2015.
+
+Interview
+
+There was a phone screen by a LinkedIn recruiter. The recruiter was very supportive, convincing me that the technical interview would not be difficult. It was. Then the 2 person technical interview was conducted. Technical interview involves Collabedit and 2 questions. LinkedIn can go as fast or slow as you want in the interview process. My process could have gone a lot faster, but I had other commitments.
+
+Interview Questions
+
+Having integers in a nested list, multiply the integer by it's nested level and then add all the integers.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Nov 5, 2015 Helpful (2)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn.
+
+Interview
+
+I was contacted by a recruiter and she scheduled a technical phone interview for me. The phone interview experience was good. It started with introduction and project on resume, followed by a few C++ and system questions, and finally a coding question. The interviewer was helpful.
+
+Interview Questions
+
+Iterating through a k-dimensional array given size of each dimension in an array.  
+5 Answers
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+
+Nov 13, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Employee
+Accepted Offer
+Positive Experience
+Difficult Interview
+Application
+
+I applied through college or university. I interviewed at LinkedIn.
+
+Interview
+
+There was 1 behavioral screen, 1 phone screen, and 1 onsite. Overall, the recruiters are very accommodating and very nice through the whole interview process, and especially on the onsite. On the onsite, they give you a graph of all your linked-in connections, and bag of goodies, and overall, make sure you have an exceptional experience. Pretty much one of the biggest reason I wanted to accept this offer right away.
+Show Less
+
+Interview Questions
+
+Phone screen was average. Onsite was very hard  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Nov 17, 2015 Helpful (5)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Sunnyvale, CA
+Declined Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through an employee referral. The process took 4 weeks. I interviewed at LinkedIn (Sunnyvale, CA) in November 2015.
+
+Interview
+
+Referred by a friend and got contacted by a recruiter in Data & Infrastructure field. I am not quite sure whether this position is the best fit for me but I took the phone screen one week later. I answered two quick questions (semaphore vs mutex, write-back vs write-through) and two coding questions. Even though I aced all of them, I felt like I am not in a strong position in infrastructure track. One week later recruiter invited me for onsite interview and kindly agreed to switch me to application track. The onsite was amazing and had lots of fun. Recruiters seemed to let you impressed with great food and working environment there. Four rounds in total, two algorithm, one system design and one manager. I found lots of details were asked in algorithm rounds: you are supposed to prove assumptions mathematically and make sure you got everything correct at each step. It was not like coding up the answers correctly was the final expectation, but rather the way you tackle them. For system design question, make sure you did some research on internet to find how to prepare that (Quora, HireTech). If you are familiar with web server, load balance, master-slave db, data sharding, caching, denormalizing, etc.. you are in good shape. Got offer two weeks later. It is a late offer because recruiter was not so quick to reply emails and didn't respect my deadlines. I have signed on Google and need to reject it. But overall, great company and great interview process.
+Show Less
+
+Interview Questions
+
+NDA  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Nov 18, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Sunnyvale, CA
+No Offer
+Positive Experience
+Average Interview
+Application
+
+I applied through an employee referral. The process took 4+ weeks. I interviewed at LinkedIn (Sunnyvale, CA).
+
+Interview
+
+I was referred by a friend, it took around two weeks when the recruiter reached out to me. We scheduled the phone screen and three weeks later the onsite. Linkedin was holding the Invitational arranged food and events.
+
+Interview Questions
+
+Altogether 4 interviews, one talking with the hiring manager about past experience, one system design and two algorithms.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Sponsored Jobs
+Sysomos Logo
+Sr. Software (API) Engineer
+
+Sysomos, L.P. – Raleigh, NC
+
+ College of Charleston Logo
+CRM Developer
+
+College of Charleston – Charleston, SC
+
+ Catapult Systems Logo
+CRM Developer
+
+Catapult Systems – Austin, TX
+
+ Conduent Logo
+Senior Siebel CRM Developer
+
+Conduent – Germantown, MD
+
+Nov 24, 2015  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate in Mountain View, CA
+No Offer
+Negative Experience
+Average Interview
+Application
+
+I applied through a recruiter. The process took 2 weeks. I interviewed at LinkedIn (Mountain View, CA) in September 2015.
+
+Interview
+
+Had a good experience with the recruiter. Had a phone interview that went pretty bizarre. I banged out an optimal solution in ten minutes. Given that there are two interviewers, it was a mistake that the inexperienced one was in charge because he then started to ask me to find a suboptimal solution. Seriously? I'm then asking him stuff like "Did you have a running time in mind for the suboptimal way?" By the time a second phone interview rolled around I thankfully got a job offer from their next door neighbor.
+Show Less
+
+Interview Questions
+
+Find combinations of integer sums.  
+Answer Question
+Share on Facebook
+Share on Twitter
+Share via Email
+Copy Link
+Dec 8, 2015 Helpful (17)  
+LinkedIn Logo	
+Software Engineer Interview
+Anonymous Interview Candidate
+No Offer
+Negative Experience
+Easy Interview
+Application
+
+I applied through a recruiter. I interviewed at LinkedIn.
+
+Interview
+
+My experience echoes the review in Nov 2015. It is pretty bizarre. The interviewers are pretty set in their solution, and not interested in your solution, even though I tried to explain why it is practically better. It does not reflect very well on LinkedIn as an innovative engineering organization: you disregard an opinion just because it is different.
+Some example: They insisted on linked-list based implementation for stack, argued that array-based one is not optimal during inserts. I already acknowledged it is O(1) armortized and tried to convince it is in practice (hint: javadoc of ArrayDeque). I had to explain to the interviewers removing items from the end of an ArrayList is O(1), not O(N) like random removal. I had to change my generic variable E to T because interviewers think it is wrong (it does not matter, and E is actually the convention for collections). And it goes on.
