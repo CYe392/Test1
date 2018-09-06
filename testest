@@ -1,0 +1,415 @@
+I.	Document Acceptance
+A.	The undersigned parties acknowledge and accept the collective information detailed in this document.  
+Role	Acceptance 
+
+
+Data Protection Officer
+	
+
+Russ Kuroda 
+8/31/18 (approved to move forward)
+
+
+LVP - Global Marketing	
+
+Susan Konstantaras
+8/29/18
+
+
+VP - FII Support and Operations	
+
+Marcus Miller
+8/29/18
+II.	Problem Definition
+A.	We need a short term solution to anonymize personal data in Iris and delete electronic documents in bulk. 
+B.	In future iterations, we anticipate requiring a solution that encompasses more upstream anonymization tasks, record retention procedures, as well as the erasure of additional fields in Iris and other data sources.
+III.	Request Submission Requirements
+A.	Iris CID will be used to identify records requiring anonymization. 
+B.	Requests will be submitted individually or in bulk (e.g. via CSV file). 
+C.	Requests may only be submitted by TBD users.  
+IV.	Anonymization Requirements
+A.	If a CID is submitted for anonymization AND
+1.	is a PCG prospect or former prospect ; AND
+2.	it is not in legal hold ; THEN
+a.	set the values of the target fields for that CID to the Value after anonymization shown in the table below; AND  
+b.	delete all Iris work notes for that CID ; AND
+c.	delete all electronic documents  for that CID. 
+B.	Anonymization requests must be processed within one business day. 
+C.	Anonymization updates to Iris must be processed consistent with Iris UI updates as required so that existing rules to propagate those updates throughout the environment occur.
+Element	Target Field 
+(Display Name)	Target Field 
+(Column Name)	Iris Entity 	Value after anonymization
+Address	Street 1	Line1	Address	null
+Address	Street 2	Line2	Address	null
+Address	City	City	Address	null
+Address	Postal Code	PostalCode	Address	null
+Email	Email Secure	EMailAddress1	Contact	null
+Email	Email Non-Secure	EMailAddress2	Contact	null
+Email	Other Email Sec	fi_OtherEmailNonSecure	Contact	null
+Email	Other Email Non Sec	fi_OtherEmailSecure	Contact	null
+Name	First Name	FirstName	Contact	test
+Name	Last Name	LastName	Contact	test
+Phone	Phone Number	fi_phonenumber	Phone Number	1111111111
+V.	Records and Reporting 
+A.	A status of submitted requests must be provided to TBD users.
+1.	This must include submitted CIDs where processing errors occurred for Iris or electronic documents and/or no record is found in Iris.
+B.	Maintain records of the below
+1.	Unique Identifier – The CID submitted in the request
+2.	Status – A status of whether the anonymization/deletion was successfully completed for the data source
+3.	Data Source – Iris or electronic document source(s)
+4.	Submitted On - Date request was submitted
+5.	Completed On – The date records in the data source were anonymized/deleted.
+6.	Exception Message - Indicate why the CID was not successfully processed. 
+a.	Example reasons: it did not qualify for anonymization (e.g. PCG Client, Legal Hold), the CID was not found in data source, or an error occurred (e.g. SQL timeout).  
+VI.	High Level Process
+ 
+VII.	Out of scope (nice to have)
+A.	Additional safeguards
+1.	It is assumed the Data Protection Office, Global Marketing, and/or FII will perform manual checks to confirm that a data subject is suitable for erasure prior to submitting it via the above process. Therefore, in this iteration, the following checks are out of scope. 
+a.	Exclude former clients 
+b.	Exclude if a Portfolio Evaluation Group document was sent
+c.	Exclude based on recent marketing, sales, or service activity
+d.	Exclude existing or former non-PCG clients (e.g. Fisher Life Planning, 4S, Assurance Vie) 
+e.	Partial anonymization of client contacts or prospect contacts 
+f.	Partial anonymization of data subjects we do not want to do business with (e.g. Sales Assigned To is equal to Queue – Trash)
+g.	Exclude other data subjects – Provide the DPO the ability to exclude ad hoc data subjects from anonymization.  
+2.	Final Confirmation – the submitter must confirm the submitted CIDs should be anonymized 
+B.	Records and Reporting 
+1.	Maintain the ability to restore anonymized records within X days of anonymization.  
+2.	Maintain, only as long as it is required, foreign keys or data required to anonymize records in currently out of scope data sources.  
+3.	Within one business day from the anonymization request date, send a link to a status report (content below) to ~Anonymization. 
+a.	A summary of each request
+i.	Total records submitted – Total number of unique identifiers (e.g. Iris CID) submitted
+ii.	Total records processed successfully – Total number of unique identifiers found in data source (e.g. Iris) for which exceptions did not occur and the anonymization procedures were executed successfully. 
+iii.	Total exceptions encountered – Total number of submitted unique identifiers which were not anonymized because no record was found in Iris, an exception was found (i.e. for PCG Client or Legal), or the anonymization procedures were not executed for another reason.  
+b.	Exception details
+i.	Unique Identifier 
+ii.	Identifier Type 
+iii.	Submission Date - Date request was submitted
+iv.	Message - Indicate why the unique identifier was not successfully processed.
+4.	Maintain records of the below 
+a.	Completed On – The date the anonymization and/or deletion occured
+b.	Identifier Type – In this iteration, it will always be “Iris CID”. 
+c.	Exception Message
+d.	Authorized By
+e.	Anonymization Reason 
+f.	Anonymization Procedure Description – Include a version number, procedure implementation date, as well as list of data sources and fields included in the procedure. 
+C.	Anonymization for record retention policies
+1.	Please see Anonymization and Data Protection - QBRD. 
+D.	Anonymize more Iris fields: 
+1.	In future iterations, we expect to pursue the anonymization of additional fields and data sources. For example, below are the Iris fields we tentatively expect to anonymize.  
+Entity Name	Datatype 	TableColumnName	Anonymize 	Updated Value 	Updated Value Name
+ActivityParty	nvarchar	PartyIdName	Yes	test2	 
+ActivityPointer	ntext	Description	Yes	test	 
+ActivityPointer	nvarchar	Subject	Yes	test	 
+ActivityPointer	nvarchar	RegardingObjectIdName	Yes	test2	 
+ActivityPointer	nvarchar	RegardingObjectIdYomiName	Yes	test2	 
+Appointment	ntext	Description	Yes	test	 
+Appointment	nvarchar	fi_FollowUpSubject	Yes	test	 
+Appointment	nvarchar	Subject	Yes	test	 
+Appointment	nvarchar	RegardingObjectIdYomiName	Yes	test2	 
+Connection	nvarchar	Record1IdName	Yes	test2	 
+Connection	nvarchar	Record2IdName	Yes	test2	 
+Contact	float	fi_Age	Yes	39	 
+Contact	picklist	fi_IndustryCode	Yes	318	Financial Services
+Contact	picklist	fi_FedTaxBracketCode	Yes	1662	10% (UK)
+Contact	datetime	BirthDate	Yes	1/1/1979	 
+Contact	nvarchar	fi_birthdate	Yes	1/1/1979	 
+Contact	money	fi_LiquidNetWorth	Yes	100000	 
+Contact	money	fi_liquidnetworth_Base	Yes	100000	 
+Contact	money	fi_NetWorth	Yes	100000	 
+Contact	money	fi_networth_Base	Yes	100000	 
+Contact	money	fi_PersonalAnnualIncome	Yes	100000	 
+Contact	money	fi_personalannualincome_Base	Yes	100000	 
+Contact	money	fi_PrimaryResidenceValue	Yes	100000	 
+Contact	money	fi_primaryresidencevalue_Base	Yes	100000	 
+Contact	money	fi_RelationshipValue	Yes	100000	 
+Contact	money	fi_relationshipvalue_Base	Yes	100000	 
+Contact	picklist	fi_OccupationCode	Yes	101927	Agent/Broker
+Contact	nvarchar	fi_taxid	Yes	650350539	 
+Contact	nvarchar	Fax	Yes1	1111111111	 
+Contact	nvarchar	Telephone1	Yes1	1111111111	 
+Contact	nvarchar	MobilePhone	Yes1	1111111111	 
+Contact	lookup	fi_altcitizenshipcountryid	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+Contact	lookup	fi_CitizenshipCountryId	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+Contact	lookup	fi_ResidenceCountryId	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+Contact	nvarchar	FullName	Yes1	follow system logic to set value	 
+Contact	nvarchar	Salutation	Yes1	Mr.	 
+Contact	nvarchar	Suffix	Yes1	null	 
+Contact	nvarchar	Telephone2	Yes1	null	 
+Contact	nvarchar	Telephone3	Yes1	null	 
+Contact	nvarchar	YomiMiddleName	Yes1	null	 
+Contact	nvarchar	NickName	Yes	null	 
+Contact	nvarchar	Pager	Yes1	null	 
+Contact	ntext	fi_PublicCompanyAffiliationDescription	Yes	test	 
+Contact	nvarchar	fi_noteforreceptionist	Yes	test	 
+Contact	nvarchar	fi_ParentCustomerNameOther	Yes	test	 
+Contact	nvarchar	fi_SalutationEnvelope	Yes	test	 
+Contact	nvarchar	fi_SalutationLetter	Yes	test	 
+Contact	nvarchar	FirstName	Yes1	test	 
+Contact	nvarchar	JobTitle	Yes	test	 
+Contact	nvarchar	LastName	Yes1	test	 
+Contact	nvarchar	SpousesName	Yes	test	 
+Contact	nvarchar	YomiFirstName	Yes1	test	 
+Contact	nvarchar	YomiFullName	Yes1	test	 
+Contact	nvarchar	YomiLastName	Yes1	test	 
+Contact	nvarchar	MiddleName	Yes1	test	 
+Contact	nvarchar	EMailAddress1	Yes1	test@fi.com	 
+Contact	nvarchar	EMailAddress2	Yes1	test@fi.com	 
+Contact	nvarchar	EMailAddress3	Yes1	test@fi.com	 
+Contact	nvarchar	fi_OtherEmailNonSecure	Yes1	test@fi.com	 
+Contact	nvarchar	fi_OtherEmailSecure	Yes1	test@fi.com	 
+CustomerAddress	nvarchar	PostalCode	Yes1	98607	 
+CustomerAddress	nvarchar	Fax	Yes1	1111111111	 
+CustomerAddress	nvarchar	Line1	Yes1	13100 skyline blvd	 
+CustomerAddress	nvarchar	StateOrProvince	Yes1	CA	 
+CustomerAddress	nvarchar	fi_Suffix	Yes1	null	 
+CustomerAddress	nvarchar	Line2	Yes1	null	 
+CustomerAddress	nvarchar	Line3	Yes1	null	 
+CustomerAddress	nvarchar	Telephone1	Yes1	null	 
+CustomerAddress	nvarchar	Telephone2	Yes1	null	 
+CustomerAddress	nvarchar	Telephone3	Yes1	null	 
+CustomerAddress	nvarchar	Country	Yes1	test	 
+CustomerAddress	nvarchar	County	Yes1	test	 
+CustomerAddress	nvarchar	fi_CompanyName	Yes	test	 
+CustomerAddress	nvarchar	fi_FirstName	Yes1	test	 
+CustomerAddress	nvarchar	fi_LastName	Yes1	test	 
+CustomerAddress	nvarchar	fi_MiddleName	Yes1	test	 
+CustomerAddress	nvarchar	fi_Salutation	Yes1	test	 
+CustomerAddress	nvarchar	PrimaryContactName	Yes1	test	 
+CustomerAddress	nvarchar	Name	Yes1	test	 
+CustomerAddress	nvarchar	City	Yes1	Woodside	 
+Email	ntext	Description	Yes	test	 
+Email	nvarchar	Subject	Yes	test	 
+Email	nvarchar	RegardingObjectIdName	Yes	test2	 
+Email	nvarchar	RegardingObjectIdYomiName	Yes	test2	 
+Fax	nvarchar	FaxNumber	Yes1	1111111111	 
+Fax	ntext	Description	Yes	test	 
+Fax	nvarchar	fi_FollowUpSubject	Yes	test	 
+Fax	nvarchar	RegardingObjectIdName	Yes	test2	 
+Fax	nvarchar	RegardingObjectIdYomiName	Yes	test2	 
+fi_alert	ntext	Description	Yes	test	 
+fi_alert	nvarchar	Subject	Yes	test	 
+fi_alert	nvarchar	RegardingObjectIdName	Yes	test2	 
+fi_alert	nvarchar	RegardingObjectIdYomiName	Yes	test2	 
+fi_answeroptionresponse	nvarchar	fi_additionaltext	Yes	test	 
+fi_cadextensionattribute	nvarchar	fi_value	Yes	null	 
+fi_cadextensionattribute	nvarchar	fi_name	Yes	test	 
+fi_campaignresponseattributes	picklist	fi_AssetRangeCode	Yes	2170	GBP 125,000 - 249,000
+fi_campaignresponseattributes	nvarchar	fi_Guest1Name	Yes	test	 
+fi_campaignresponseattributes	nvarchar	fi_Guest2Name	Yes	test	 
+fi_campaignresponseattributes	nvarchar	fi_Guest3Name	Yes	test	 
+fi_campaignresponseattributes	nvarchar	fi_name	Yes	test	 
+fi_campaignresponseattributes	nvarchar	fi_NameBadge	Yes	test	 
+fi_campaignresponseattributes	nvarchar	fi_SpouseName	Yes	test	 
+fi_contactattributes	ntext	fi_anyoneelseimportantweshouldknowabout	Yes	test	 
+fi_contactattributes	ntext	fi_Career	Yes	test	 
+fi_contactattributes	ntext	fi_CIONContent	Yes	test	 
+fi_contactattributes	ntext	fi_clientrefusedtoanswerakycquestionexplain	Yes	test	 
+fi_contactattributes	ntext	fi_ClientsBeneficiaries	Yes	test	 
+fi_contactattributes	ntext	fi_ClientsChildren	Yes	test	 
+fi_contactattributes	ntext	fi_ClientsSuccessorTrustees	Yes	test	 
+fi_contactattributes	ntext	fi_Education	Yes	test	 
+fi_contactattributes	ntext	fi_FamilyLife	Yes	test	 
+fi_contactattributes	ntext	fi_financialservicesindustryexplain	Yes	test	 
+fi_contactattributes	ntext	fi_Interests	Yes	test	 
+fi_contactattributes	ntext	fi_knowsanyonewhomaybeseenasfamousexplain	Yes	test	 
+fi_contactattributes	ntext	fi_knowskenfisherexplain	Yes	test	 
+fi_contactattributes	ntext	fi_legalindustryeglawyerclerkparalegaexplain	Yes	test	 
+fi_contactattributes	ntext	fi_Other	Yes	test	 
+fi_contactattributes	ntext	fi_politicsregulatoryagenciesormilitaexplain	Yes	test	 
+fi_contactattributes	ntext	fi_printdigitalorbroadcastmediaexplain	Yes	test	 
+fi_contactattributes	nvarchar	fi_AccountOwnerwhoCompletedLastKYCReview	Yes	test	 
+fi_contactattributes	nvarchar	fi_EmergencycontactforFIotherthanspouse	Yes	test	 
+fi_contactattributes	nvarchar	fi_name	Yes	test	 
+fi_currencyconversion	nvarchar	fi_name	Yes	test	 
+fi_duediligenceaccount	money	fi_Amount	Yes	100000	 
+fi_duediligenceaccount	money	fi_amount_Base	Yes	100000	 
+fi_duediligenceaccount	ntext	fi_Notes	Yes	test	 
+fi_duediligenceaccount	nvarchar	fi_Institution	Yes	test	 
+fi_duediligenceaccount	nvarchar	fi_Location	Yes	test	 
+fi_duediligenceaccount	nvarchar	fi_name	Yes	test	 
+fi_duediligencecharity	nvarchar	fi_CharitiesCommissionNumber	Yes	650111111	 
+fi_duediligencecharity	lookup	fi_Countryofoperation1Id	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencecharity	lookup	fi_Countryofoperation2Id	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencecharity	lookup	fi_Countryofoperation3Id	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencecharity	lookup	fi_Countryofoperation4Id	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencecharity	nvarchar	fi_charityfundedother	Yes	test	 
+fi_duediligencecharity	nvarchar	fi_name	Yes	test	 
+fi_duediligencecharity	nvarchar	fi_PrincipalActivityofCharityFundation	Yes	test	 
+fi_duediligencecorp	money	fi_Incomeperannum	Yes	100000	 
+fi_duediligencecorp	money	fi_incomeperannum_Base	Yes	100000	 
+fi_duediligencecorp	money	fi_Netrevenueperannum	Yes	100000	 
+fi_duediligencecorp	money	fi_netrevenueperannum_Base	Yes	100000	 
+fi_duediligencecorp	nvarchar	fi_Salesvolume	Yes	100000	 
+fi_duediligencecorp	nvarchar	fi_RegistrationNumber	Yes	650111111	 
+fi_duediligencecorp	lookup	fi_CountryofRegistrationId	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencecorp	lookup	fi_Primarycountryofoperation1Id	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencecorp	lookup	fi_Primarycountryofoperation2Id	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencecorp	lookup	fi_Primarycountryofoperation3Id	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencecorp	nvarchar	fi_Governmentcontrolcompanydetails	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_Locationofparentcompany	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_name	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_Nameofparentcompany	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_OffshoreCompanyDetails	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_Principlelineofbusinessofcorp	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_Principlelineofbusinessofparentcompany	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_TaxJurisdiction	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_TradingName	Yes	test	 
+fi_duediligencecorp	nvarchar	fi_TypeofIndustry	Yes	test	 
+fi_duediligenceentity	money	fi_sourceofwealth_amountofgift	Yes	100000	 
+fi_duediligenceentity	money	fi_sourceofwealth_amountofgift_Base	Yes	100000	 
+fi_duediligenceentity	money	fi_SourceOfWealth_AmountofInheritance	Yes	100000	 
+fi_duediligenceentity	money	fi_sourceofwealth_amountofinheritance_Base	Yes	100000	 
+fi_duediligenceentity	money	fi_SourceOfWealth_AmountofSettlement	Yes	100000	 
+fi_duediligenceentity	money	fi_sourceofwealth_amountofsettlement_Base	Yes	100000	 
+fi_duediligenceentity	picklist	fi_pepworldcheckccp	Yes	157610002	N/A
+fi_duediligenceentity	nvarchar	fi_Physicaladdressifentityifdifferentfromabo	Yes	13100 skyline blvd	 
+fi_duediligenceentity	lookup	fi_CountryId	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligenceentity	ntext	fi_AreasOfConcern_AditionalInformation	Yes	test	 
+fi_duediligenceentity	ntext	fi_PEP_WorldCheckCPPInfo	Yes	test	 
+fi_duediligenceentity	ntext	fi_sourceoffunding_accountsnotsamenameinfo	Yes	test	 
+fi_duediligenceentity	ntext	fi_SourceOfWealth_AdditionalInformation	Yes	test	 
+fi_duediligenceentity	ntext	fi_SourceOfWealth_OtherDetails	Yes	test	 
+fi_duediligenceentity	ntext	fi_SourceOfWealthMemo	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_ExpectedAccountActivity_Purpose	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_Legaladdressofentity	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_LegalnameofEntity	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_name	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_sourceoffundingconsistentother	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_SourceofWalth_Ofdeceased	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_SourceOfWealth_LocationofBusiness	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_SourceOfWealth_NameofBusiness	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_SourceOfWealth_Personfromwhomreceived	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_SourceOfWealth_SourceofWealthofsettlor	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_SourceOfWealth_TypeofBusiness	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_sourceofwealthofdeceasedGift	Yes	test	 
+fi_duediligenceentity	nvarchar	fi_sourceofweatlh_giftingperson	Yes	test	 
+fi_duediligenceindividual	picklist	fi_Industry	Yes	318	Financial Services
+fi_duediligenceindividual	datetime	fi_DateofBirth	Yes	1/1/1979	 
+fi_duediligenceindividual	datetime	fi_spousedateofbirth	Yes	1/1/1979	 
+fi_duediligenceindividual	nvarchar	fi_birthdate	Yes	1/1/1979	 
+fi_duediligenceindividual	money	fi_sourceofwealth_amountofgift	Yes	100000	 
+fi_duediligenceindividual	money	fi_sourceofwealth_amountofgift_Base	Yes	100000	 
+fi_duediligenceindividual	money	fi_SourceOfWealth_AmountofInheritance	Yes	100000	 
+fi_duediligenceindividual	money	fi_sourceofwealth_amountofinheritance_Base	Yes	100000	 
+fi_duediligenceindividual	money	fi_SourceOfWealth_AmountofSettlement	Yes	100000	 
+fi_duediligenceindividual	money	fi_sourceofwealth_amountofsettlement_Base	Yes	100000	 
+fi_duediligenceindividual	picklist	fi_OccupationLookup	Yes	101927	Agent/Broker
+fi_duediligenceindividual	picklist	fi_client_employmentType	Yes	100000003	Retired
+fi_duediligenceindividual	picklist	fi_pep_worldcheckccpoptions	Yes	157610002	N/A
+fi_duediligenceindividual	nvarchar	fi_AlternateBusinessAddress	Yes	13100 skyline blvd	 
+fi_duediligenceindividual	nvarchar	fi_PrimaryHomeAddress	Yes	13100 skyline blvd	 
+fi_duediligenceindividual	lookup	fi_CountryofDomicileifdifferent	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligenceindividual	lookup	fi_CountryofLegalResidence	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligenceindividual	lookup	fi_CountryofTaxResidence	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligenceindividual	lookup	fi_PrimaryCitizenship	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligenceindividual	lookup	fi_primarycountriesofoperation	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligenceindividual	lookup	fi_primarycountriesofoperationsecond	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligenceindividual	lookup	fi_primarycountriesofoperationthird	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligenceindividual	ntext	fi_areasofconcern_aditionalinformation	Yes	test	 
+fi_duediligenceindividual	ntext	fi_EmplInformInterestInStateOwnedDetails	Yes	test	 
+fi_duediligenceindividual	ntext	fi_employmentSpecifyNotWorking	Yes	test	 
+fi_duediligenceindividual	ntext	fi_pep_worldcheckcppinfo	Yes	test	 
+fi_duediligenceindividual	ntext	fi_sourceoffunding_accountsnotsamenameinfo	Yes	test	 
+fi_duediligenceindividual	ntext	fi_SourceOfWealth_AdditionalInformation	Yes	test	 
+fi_duediligenceindividual	ntext	fi_sourceofwealth_otherdetails	Yes	test	 
+fi_duediligenceindividual	ntext	fi_SourceOfWealthMemo	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_EmployerFormerEmployer	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_ExpectedAccountActivity_Purpose	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_fullname	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_name	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_PrintNameandInitial	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_SourceofWalth_Ofdeceased	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_sourceofwealth_deceasedperson	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_SourceOfWealth_LocationofBusiness	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_SourceOfWealth_NameofBusiness	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_SourceOfWealth_Personfromwhomreceived	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_sourceofwealth_persongifting	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_SourceOfWealth_SourceofWealthofsettlor	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_SourceOfWealth_TypeofBusiness	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_spousename	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_TitleRole	Yes	test	 
+fi_duediligenceindividual	nvarchar	fi_nationalitycitizenship	Yes	United States	 
+fi_duediligencetrust	picklist	fi_NatureofTrust	Yes	157610003	Other
+fi_duediligencetrust	lookup	fi_CountrytrustbasedId	Yes	6c848add-4dce-e211-9e02-005056b9001c	United States
+fi_duediligencetrust	ntext	fi_IsTrusteeaCoproprationDetails	Yes	test	 
+fi_duediligencetrust	ntext	fi_IsTrusteeregulatedbyafinancialdescription	Yes	test	 
+fi_duediligencetrust	nvarchar	fi_name	Yes	test	 
+fi_duediligencetrust	nvarchar	fi_natureoftrustother	Yes	test	 
+fi_financialaccount	money	fi_CurrentMarketValue	Yes	100000	 
+fi_financialaccount	money	fi_currentmarketvalue_Base	Yes	100000	 
+fi_financialaccount	money	fi_ExpectedValue	Yes	100000	 
+fi_financialaccount	money	fi_expectedvalue_Base	Yes	100000	 
+fi_financialaccount	money	fi_TerminationValue	Yes	100000	 
+fi_financialaccount	money	fi_terminationvalue_Base	Yes	100000	 
+fi_financialaccount	nvarchar	fi_TaxId	Yes	650350539	 
+fi_financialaccount	nvarchar	fi_CustodianAccountNumber	Yes	6503505396	 
+fi_financialaccount	ntext	fi_BenchmarkInfo	Yes	test	 
+fi_financialaccount	nvarchar	fi_FullAccountName	Yes	test	 
+fi_financialaccount	nvarchar	fi_name	Yes	test	 
+fi_financialaccount	nvarchar	fi_ShortName	Yes	test	 
+fi_linkedtransfer	money	fi_TransferValue	Yes	100000	 
+fi_linkedtransfer	money	fi_transfervalue_Base	Yes	100000	 
+fi_linkedtransfer	nvarchar	fi_LFAccountNumber	Yes	6503505396	 
+fi_linkedtransfer	nvarchar	fi_name	Yes	test	 
+fi_linkedtransfer	nvarchar	fi_Other	Yes	test	 
+fi_milestone	nvarchar	fi_name	Yes	test	 
+fi_note	ntext	Description	Yes	test	 
+fi_note	nvarchar	RegardingObjectIdName	Yes	test2	 
+fi_note	nvarchar	RegardingObjectIdYomiName	Yes	test2	 
+fi_phonenumber	nvarchar	fi_phonenumber	Yes1	1111111111	 
+fi_questionresponse	ntext	fi_responsetext	Yes	test	 
+fi_questionresponse	nvarchar	fi_name	Yes	test	 
+fi_relationshipmanagement	ntext	fi_ActivityNote	Yes	test	 
+fi_relationshipmanagement	nvarchar	fi_FollowUpSubject	Yes	test	 
+fi_relationshipmanagement	nvarchar	fi_name	Yes	test	 
+fi_relationshipreassignment	nvarchar	fi_name	Yes	test	 
+fi_soiissue	nvarchar	fi_AdditionalNotes	Yes	test	 
+fi_soiissue	nvarchar	fi_AdditionalNotesContd	Yes	test	 
+fi_soiissue	nvarchar	fi_AdditionalNotesContd2	Yes	test	 
+fi_soiissue	nvarchar	fi_description	Yes	test	 
+fi_soiissue	nvarchar	fi_SpecialHandling	Yes	test	 
+fi_surveyresponse	nvarchar	fi_name	Yes	test	 
+fi_termination	money	fi_TerminationValue	Yes	100000	 
+fi_termination	money	fi_terminationvalue_Base	Yes	100000	 
+fi_termination	ntext	fi_Description	Yes	test	 
+fi_termination	ntext	fi_HistoricalDetails	Yes	test	 
+fi_termination	nvarchar	fi_name	Yes	test	 
+fi_worknote	ntext	fi_Note	Yes	test	 
+fi_worknote	nvarchar	fi_name	Yes	test	 
+Incident	ntext	Description	Yes	test	 
+Incident	ntext	fi_ActivityNote	Yes	test	 
+Incident	ntext	fi_InitialSetupAccountActivityNotes	Yes	test	 
+Incident	nvarchar	CustomerIdName	Yes	test	 
+Incident	nvarchar	CustomerIdYomiName	Yes	test	 
+Incident	nvarchar	fi_FollowUpSubject	Yes	test	 
+Incident	nvarchar	Title	Yes	test	 
+Opportunity	money	fi_LiquidNetWorth	Yes	100000	 
+Opportunity	money	fi_liquidnetworth_Base	Yes	100000	 
+Opportunity	money	fi_NetWorth	Yes	100000	 
+Opportunity	money	fi_networth_Base	Yes	100000	 
+Opportunity	money	fi_SignedAmount	Yes	100000	 
+Opportunity	money	fi_signedamount_Base	Yes	100000	 
+Opportunity	money	fi_TargetAssets	Yes	100000	 
+Opportunity	money	fi_targetassets_Base	Yes	100000	 
+Opportunity	ntext	Description	Yes	test	 
+Opportunity	ntext	fi_ActivityNote	Yes	test	 
+Opportunity	nvarchar	CustomerIdName	Yes	test	 
+Opportunity	nvarchar	CustomerIdYomiName	Yes	test	 
+Opportunity	nvarchar	fi_CurrentFundLocation	Yes	test	 
+Opportunity	nvarchar	fi_FollowUpSubject	Yes	test	 
+Opportunity	nvarchar	fi_MeetingLocation	Yes	test	 
+Opportunity	nvarchar	fi_Occupation	Yes	test	 
+Opportunity	nvarchar	Name	Yes	test	 
+PhoneCall	nvarchar	PhoneNumber	Yes	1111111111	 
+PhoneCall	ntext	Description	Yes	test	 
+PhoneCall	nvarchar	fi_FollowUpSubject	Yes	test	 
+PhoneCall	nvarchar	RegardingObjectIdName	Yes	test2	 
+PhoneCall	nvarchar	RegardingObjectIdYomiName	Yes	test2	 
+Task	ntext	Description	Yes	test	 
+Task	nvarchar	fi_FollowUpSubject	Yes	test	 
+Task	nvarchar	Subject	Yes	test	 
+Task	nvarchar	RegardingObjectIdName	Yes	test2	 
+Task	nvarchar	RegardingObjectIdYomiName	Yes	test2	 
+
