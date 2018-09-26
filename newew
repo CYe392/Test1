@@ -1,0 +1,252 @@
+Idea#s:  
+Discretionary
+
+Problem Definitions and Solution Descriptions
+1.	Problem Definition
+a.	7815: The business needs to be able to track two new milestone calls related to First Year Client Curriculum (FYCC)
+2.	Solution Description
+a.	7815: Add three activity topics to Iris
+i.	Post Clearance Call (New Milestone Call)
+ii.	FYCC Call Scheduled
+iii.	FYCC Education Call (New Milestone Call)
+Reporting is required for each activity (US PCG Bus Arch to provide mockup)
+b.	Sizing estimate = Small (less than 40 hours)
+3.	Problem Definition
+a.	7817: The business needs to be able to track when a transfer has been submitted, to plug a gap in the process and save time on review and audit-related work by TLs
+4.	Solution Description
+a.	7817: Add “Transfers Initiated” date field on Iris account entity under Account Tracking Tab
+i.	The new field will need to be incorporated into the existing report: CSA Milestones
+b.	Sizing estimate = Small (less than 40 hours)
+5.	Problem Definition
+a.	7850: Adding additional links to External Apps in Iris to save time over navigating to FIIRE
+6.	Solution Description
+a.	7850: Add links to the following systems under the external apps menu within Iris
+i.	Referral Database
+ii.	Billing Sheets
+iii.	Beneficiary Info
+iv.	CRT link
+v.	FSN
+b.	Sizing estimate = Small (less than 40 hours)
+7.	Problem Definition
+a.	7862: IC TLs are receiving unnecessary email regarding Accounts Moved to Inactive CSA
+8.	Solution Description
+a.	7862: Remove IC management from recipient list for Email Template: Account not worked on by any CAC
+b.	Sizing estimate = Small (less than 40 hours)
+9.	Problem Definition
+a.	7860: ~Finance Billing no longer needs to be included on Client death emails.
+10.	Solution Description
+a.	7860: Remove ~FinanceBilling from  system parameter: Contact Death CC and Contact Death Purisima CC for Email template: Contact Death
+b.	Sizing estimate = Small (less than 40 hours)
+11.	Problem Definition
+a.	7564: FII would like to be notified when the “Follow-up on Transfer” activity topics are entered
+12.	Solution Description
+a.	7564: Automatically send email when activity topic “Follow-Up on Transfer” is entered.
+i.	New Email template
+ii.	New System Parameter for Email CC (if necessary)
+b.	Sizing estimate = Small (less than 40 hours)
+13.	Problem Definition
+a.	7785: FII would like to change the ordering of countries on the Countries entity so that UK appears second after the US.
+14.	Solution Description
+a.	7785 Bulk Edit to be peformed to Sequence field of individual countries within countries entity give them a lower sequence (all are currently ranked 1). After bulk edit, individual countries sequence values can be added to change the list order.
+b.	Sizing estimate = Small (less than 40 hours)
+15.	Problem Definition
+a.	7759: Business needs to be able to identify on assignment emails where CACs and ICs are located in order to know when to call or email depending on time of day.
+16.	Solution Description
+a.	7759: Add office locations of CAC and IC to New Client Assignment Email template
+i.	The IC’s NCC status will also need to be indicated on the emails.
+1.	Identify NCC ICs? - All ICs reporting to Group 04
+2.	Location to appear – CA, WA, TX
+ii.	Ex. IC: Ryan Goodman - 18007619805x4844, WA, NCC]
+iii.	For ICs reporting to Group 04, it would be nice for it to display as “PC: Ryan…”
+17.	Problem Definition
+a.	7866: To avoid displaying old names or spelling errors in Worknotes, the business would like to change the worknote header to display the network ID instead of the User ID.
+18.	Solution Description
+a.	7866: Change account header use the network ID in place of the Userid.
+b.	Sizing Estimate: Medium
+19.	Problem Definition
+a.	7748: FII needs the ability to store what type of Raymond James Fee schedule  a client has for a given account.
+20.	Solution Description
+a.	7748: Add Account-level extension attribute: RJIS Fee Schedule: (Old/New)
+i.	Possibly add links to the fee schedule on FIIRE
+
+21.	Scope
+•	In Scope
+o	TBD: The total scope will be determined as the full list of changes is evaluated and sized against resource availability and production release date on October 11, 2018.
+•	Out of Scope
+o	TBD
+22.	Notes
+
+Project_Number	7817 
+Title	Add Milestone to Account Tracking on Iris 
+Idea Description	Account Tracking Feature in Iris is missing "Transfer Submitted" leaving a hole in tracking if work is complete.  CAC TLs are asking this be fixed by adding "Transfer Submitted" milestone
+Top Tier	No 
+Project Ranking	N/A 
+Backlog Rank	N/A 
+Status	In-Flight 
+Business Unit	Private Client Group 
+Business Group	CSA 
+Problem Definition	Kayne Young   (6/21/2018 12:43 PM): 
+Per Nicole Keyser, CAC TL, the current tracking of Transfers being submitted is very manual and prone to error.  Today, CAC TLs have to track work in arrears through the use of SOTs when it shows "Missing Transfer Initiated" after Docs Recieved. All the CACs have to account to which works was completed and which was missed, causing a lot of review and unnecessary rework.
+Adding a "Transfer Submitted" milestone to the account tracking feature would plug this gap in the process, prevent a lot of post process audit by the TLs.
+End State	No existing entries.
+Notes	Kayne Young   (8/21/2018 6:11 AM): 
+Per request, Nicole provided current state sample reporting
+From: Nicole Keyser 
+Sent: Tuesday, August 21, 2018 5:57 AM
+To: Kayne Young
+Subject: RE: Request for Info - Idea 7817 Add Milestone to Account Tracking on Iris
+ 
+Hi Kayne!
+ 
+The attached report would need to be updated for associates and TLs to reflect the current milestone.
+ 
+Currently 
+Individual	Contact
+Id	Account
+Number	Client
+Name	Description	Notes	Days
+Remaining
+CSA 	####	####	Name of Client	Missing Transfer Initiated	Docs Received: DATE	#
+ 
+ 
+New Update
+Individual	Contact
+Id	Account
+Number	Client
+Name	Description	Notes	Days
+Remaining
+CSA 	####	####	Name of Client	Missing Transfer Submitted	Docs Received: DATE	#
+CSA 	####	####	Name of Client	Missing Transfer Initiated	Transfers Submitted: DATE	#
+ 
+Thanks,
+Nicole Keyser 
+CAC TL | 2354
+Justin Harp   (8/3/2018 7:48 AM): 
+Under review for inclusion in Oct 2018 release.  Data availability is still under review.
+Justin Harp   (8/2/2018 3:52 PM): 
+Confirmed with Pressler Transfers Submitted is needed even though Transfers Initiated already exists.  They're two distinct steps in the process.
+Kayne Young   (6/21/2018 12:43 PM): 
+Nicole was requested to provide ROI metrics to support this request 
+
+Submitted By	Nicole Keyser   
+
+Submission Date	6/21/2018 
+Date Completed	  
+BA Assigned	Kayne Young 
+Projects Resource	  
+PG Management Team	N/A 
+Related Idea Numbers	  
+Target End Date (Optional)	  
+Enterprise Keywords	  
+Application Backlog	Iris 
+Iris Release	N/A 
+PCG Classification	No Direct Goal 
+BL View	No 
+Omit View	No 
+
+
+Project_Number	7862 
+Title	CSA Email Template Update - Account Moved to Inactive 
+Idea Description	Request to remove IC Mgt from CSA Email Template - Account Moved to Inactive
+
+Top Tier	No 
+Project Ranking	N/A 
+Backlog Rank	N/A 
+Status	In-Flight 
+Business Unit	Private Client Group 
+Business Group	Investment Counselor 
+Problem Definition	Kayne Young   (7/25/2018 10:41 AM): 
+From: Ben Pressler 
+Sent: Tuesday, July 24, 2018 3:14 PM
+To: ~US PCG Business Architecture
+Cc: Jessica Smith; Tina Rich
+Subject: Account Moved to Inactive CSA email
+ 
+Team – IC management has requested to be removed from the below automated emails. Please reach out to Jessica or Tina with questions or concerns regarding priority. Thank you.
+ 
+From: Iris 
+Sent: Monday, July 23, 2018 8:15 AM
+To: Mary Kate Levitt; Jim Neidinger
+Cc: Tina Rich
+Subject: Account Moved to Inactive CSA
+ 
+The following account has been moved to Active CSA = No.  Please see the CAC TL with questions.
+ 
+Client: Dr. Owen J. Simon (1268013)
+Contact Id: 1268013
+AcctId: 374218
+Acct Name: Owen J. Simon Roth IRA
+IC:  Naveen Hossain
+CAC:  Mary Kate Levitt
+Portfolio Counselor:  
+Sales Person:  Stewart Hollingshead
+Expected Value: 
+ 
+ 
+Ben Pressler | Lieutenant Vice President, CSA Group
+FISHER INVESTMENTS
+13100 Skyline Blvd. | Woodside, CA 94062
+Phone: 800-550-1071 | Fax: 650-529-1436
+Email: b.pressler@fi.com
+ 
+End State	No existing entries.
+Notes	Kayne Young   (8/3/2018 11:24 AM): 
+Spoke with Tina - this email is not needed by IC TLs any longer.  ICs were removed some time ago and IC TLs have no actionable items.  Per Tina, Jessica Smith interviewed IC TLs and no one needed the email.
+This item is being considered for Oct 2018 Iris Release
+Submitted By	Tina Goerke   
+
+Submission Date	7/24/2018 
+Date Completed	  
+BA Assigned	Kayne Young 
+Projects Resource	  
+PG Management Team	N/A 
+Related Idea Numbers	  
+Target End Date (Optional)	  
+Enterprise Keywords	  
+Application Backlog	Iris 
+Iris Release	N/A 
+PCG Classification	No Direct Goal 
+BL View	No 
+Omit View	No 
+
+
+
+Drew:
+Following ideas do not require any dev. work. 
+Please ensure there are no downstream or reporting impacts, especially for 7815 and 7748.
+
+7860: ~Finance Billing no longer needs to be included on Client death emails.                    (System parameter changes)
+7785: FII would like to change the ordering of countries on the Countries entity so that UK appears second after the US. (bulk edit)
+7815: Add three activity topics to Iris                                                                                    (new records for topic and topic collection)
+7748: Add Account-level extension attribute: RJIS Fee Schedule (If links are not needed, no dev. work is required. New records for extension attribute, security resources, security resource roles etc.)   
+
+
+Data migration tasks are required for the following:
+7815,7748 and 
+7759: Add office locations of CAC and IC to New Client Assignment Email template (update to email Template: fi_relationshipmanagement Assigned To is Updated)
+7564: Notify on the “Follow-up on Transfer” activity topics are entered (added new shell email activity)
+Data migration tool will need to be run to promote the data rows (new/updates to existing records such as system parameters, email templates) across STAGE-> QA->PPROD.
+Please work with Chenlin on having the data migration files created for this and track this as a dependency for deployment.
+We need to ensure that we are able to get these data records migrated to STAGE first.
+
+For  7759, the GAL extract job needs to be updated. I’ve spoken with Venu on this. Please track this as a dependency to ensure that the “State” field is populated for system user records.
+
+
+Plugin changes for the TimeBased Security related change requested by Marc
+Configuration update to Fisher.Crm.MScrm.Plugins.TimeBaseSecurityAccess plugin
+Register a new POST image for "Postop-contact-update-time base securityaccess" for "fi_salesuserid" attribute
+
+Assign to Chenlin
+7817: “Transfers Initiated” date field  : 
+- New attribute to be added/ Audit log entity needs to be updated with new attribute, this will likely need SPROC change as well for the audit logs grid. 
+- Please clarify whether there is a historic back  fill needed for this field
+7862: IC TLs are receiving unnecessary email regarding Accounts Moved to Inactive CSA  
+-          Code change needed for this due to how the internal contact list is being created and reused across emails in the plugin code. 
+
+
+
+Chenlin: Refer to the above for your tasks for the IRIS release and let me know if there are questions. We need to discuss 7862 and how best to accommodate for this change.
+
+
+Please track all of these items for the release to ensure we are on track from a dependency standpoint
+
