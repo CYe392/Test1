@@ -1,0 +1,270 @@
+body { 
+    background-color: #F6F8FA;
+	margin: 0px; 
+}
+
+.theader {
+    background-color: #F6F8FA;
+    font-weight: bold!important;
+    height: 25px;
+    margin: 0 0 0 1%;
+    overflow: auto;
+    position: fixed;
+    top: 0px;
+    width: 99%;  
+}
+ 
+   .thleft {
+        float:left;
+		width: 50%;
+		z-index: 9999;
+    }
+
+    .thright {
+        float:left;
+		width: 50%;
+		z-index: 9999;
+    }
+
+#surveyBody table {
+	border-collapse: collapse;
+    margin:25px 1% 0 1%;
+	width: 98%;
+}
+tr.separator > td {
+	padding-top: 0.8em;
+	padding-bottom: 0.8em;
+    border-bottom: 1px solid LightGray;
+}
+
+tr.continuous > td {
+	padding-top: 4px;
+	padding-bottom: 4px;
+    /*border-bottom: 1px solid LightGray;*/
+}
+
+.leftColumn{
+	/*display: inline-block;*/
+	min-width:100px;
+	max-width: 500px;
+	padding-right: 10px;
+	width: expression(this.width > 500 ? 500 : true);
+}
+
+td.rightColumn {
+	/*display:inline-block;*/
+	min-width: 300px;
+	max-width: 600px;
+	width: expression(this.width > 600 ? 600 : true);
+}
+
+select {
+    height: 22px;
+	width: 100%;
+	/*margin-bottom: 4px;
+	*width: 103%\9;*/
+}
+	select option {
+		padding-bottom: 2px;
+	}
+
+.richtext {
+	display: block;
+	min-height: 18px!important;
+    width: 99.5%;
+}
+
+.text  {
+	display: inline-block;
+	/*height: 15px!important;*/
+    width: 99.5%;
+}
+
+.additionalText  {
+	display: inline;	
+    width: 100%;
+    height: 16px!important;
+}
+.numeric, .date {
+	display: block;
+	height: 18px!important;
+	margin-bottom: 6px;
+	width: 99.5%;
+}
+
+.radioButton, .checkboxList {
+	width: 100%;
+}
+
+.checkBoxText, .radioButtonText {
+    display: inline;	
+    width: 99.5%;
+    height: 16px!important;
+}
+
+.radioButtonContainer {
+	display: inline;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin: 0px;
+	padding: 4px 2px 2px 0px;
+}
+
+.checkboxList li label, .radioButton li label {
+	cursor: pointer;
+	margin: 2px 0 3px 0;
+	overflow: auto;
+	max-width: 70%;
+}
+
+.checkBoxInput, .radioButtonInput {
+	margin: 0;
+	overflow-x: hidden;
+	overflow-y: auto;
+    padding: 2px 0% 2px 0;
+	position: relative;
+	top: -2px;
+	width: 100%;
+}
+
+.checkBoxInput .checkBoxText , .radioButtonInput .radioButtonText{
+	float: left;
+	margin: 4px 0 0 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+* {
+    font-size: 11px;
+	font-family: Segoe UI,Tahoma,Arial;
+}
+
+.checkboxList li , .radioButton li{
+    clear: both;
+	float: left;
+	margin-bottom: 0px;
+	min-height: 22px;
+	overflow: hidden;
+	padding-top: 3px;
+	width: 101%;
+}
+
+.checkboxList li label input, .radioButton li label input{
+    clear: both;
+    float: left;
+}
+
+	.checkboxList li label span , .radioButton li label span{
+		float: left;
+		margin: 3px 1% 0 0%;
+		padding-right: 0%;
+		max-width: 80%;
+	}
+
+.successMessage, .errorMessage, .warningMessage {
+    border-radius: 5px;
+    min-width: 20px;
+    overflow: auto;
+    position: fixed;
+	top: 0px;
+	width: 100%;
+	z-index: 9999;
+}
+
+.successMessage p, .errorMessage p, .warningMessage p {
+    float: left;
+    font-size: 11px;
+    margin: 5px 0px 5px 5px;
+    width: 85%;
+}
+.successMessage span, .errorMessage span, .warningMessage span {
+    display: inline;
+    float: left;
+    height: 16px;
+    margin: 5px;
+    width: 20px;
+}
+
+.successMessage span.close, .errorMessage span.close, .warningMessage span.close {
+	float: right;
+	margin:2px;
+	width: 10px;
+}
+
+.close img {
+	width: 10px;	
+}
+.errorMessage {
+    background-color: #FFD5D5;
+}
+
+    .errorMessage span.type {
+        background: url('../Images/error16.png') no-repeat;
+    }
+
+.warningMessage {
+    background-color: #FFEC98;
+}
+
+    .warningMessage span.type {
+        background: url('../Images/warning16.png') no-repeat;
+    }
+
+.successMessage {
+    background-color: #BBF0BB;
+}
+
+    .successMessage span.type {
+        background: url('../Images/success16.png') no-repeat;
+    }
+
+.invalidField {
+    color: red;
+    margin-left: -10px;
+    float: left;
+}
+
+.importantField {
+    color: #515967 !important;
+}
+
+.loading-panel {    
+        font-family: Helvetica, Verdana, Arial, sans-serif;
+        font-size: 11px;  
+        min-height: 40px; 
+        min-width: 480px;
+        position: absolute;
+        width: 99%;
+        /*display: inline-block;*/
+        vertical-align: middle;
+        text-align: center;
+        border: 1px solid lightgray;       
+        background-color: #e9e9e9;
+        z-index: 100;
+        -moz-opacity: 0.70;
+        opacity:.70;
+        filter: alpha(opacity=70);        
+    }
+
+span.k-state-disabled {
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important;
+    -moz-opacity: 1 !important;
+    color: #515967 !important;
+}
+
+.k-state-disabled .k-input {
+    filter: alpha(opacity=100) !important;
+    opacity: 1 !important;
+    -moz-opacity: 1 !important;
+    color: #515967 !important;
+}
+
+input[type="text"]:disabled {
+    color: #515967 !important;
+}
