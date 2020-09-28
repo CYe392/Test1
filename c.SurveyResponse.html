@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<HTML><HEAD>
+<TITLE>Survey Response</TITLE>
+<META charset="utf-8">
+<META content="IE=8; IE=edge" http-equiv="X-UA-Compatible">
+<SCRIPT type=text/javascript src="../Resources/Jquery/jquery.js"></SCRIPT>
+<SCRIPT type=text/javascript src="../Resources/Kendo/kendo.web.js"></SCRIPT>
+<SCRIPT type=text/javascript src="../Resources/Kendo/cultures/kendo.culture.enUS.js"></SCRIPT>
+<SCRIPT type=text/javascript src="../Resources/Kendo/cultures/kendo.culture.enGB.js"></SCRIPT>
+<SCRIPT type=text/javascript src="../Resources/JSON/JSON.js"></SCRIPT>
+<SCRIPT type=text/javascript src="../Resources/Underscore/underscore.js"></SCRIPT>
+<script type="text/javascript" src="../Resources/Amplify/amplify.js"></script>
+
+<SCRIPT type="text/javascript" src="../scripts/common/Crm.js"></SCRIPT>
+
+<SCRIPT type="text/javascript" src="Scripts/Utils.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="Scripts/UserService.js"></SCRIPT>
+<SCRIPT type="text/javascript" src="Scripts/Survey.js"></SCRIPT>
+
+<LINK rel="stylesheet" type="text/css" href="../Resources/Kendo/kendo.common.css">
+<LINK rel="stylesheet" type="text/css" href="../Resources/Kendo/kendo.silver.css">
+<LINK rel="stylesheet" type="text/css" href="Styles/SurveyResponse.css">
+
+<SCRIPT id="row-template" type="text/x-kendo-template">
+	<tr data-bind="attr: {class:Question.Continuity}">
+        #if(Question.AnswerType=="157610007"){#
+            <td colspan="2" data-bind="text: Question.QuestionText, attr: { title: Question.Description}"></td>
+        #}#
+        #if(Question.AnswerType!="157610007"){#
+		    <td class="leftColumn" data-bind="text: Question.QuestionText, attr: { title: Question.Description}"></td>
+            <td class="rightColumn">
+                #if(Question.AnswerType=="157610000"){#
+                    <input type="text" class="text k-input" data-bind="value: Value, disabled:IsDisabled" maxlength="2000"/>
+                #}#
+                #if(Question.AnswerType=="157610006"){#
+                    <textarea rows="3" class="richtext k-input" data-bind="value: Value, disabled:IsDisabled, events: {keyup: EnforceMaxlength, paste: EnforceMaxlength}" maxlength="2000"/>
+                #}#
+                #if(Question.AnswerType=="157610004"){#
+                    <input data-role="numerictextbox" class="numeric" type="number" data-spinners="false" data-format="n0" data-bind="value: Value, disabled:IsDisabled" maxlength="9" >
+                #}#
+                #if(Question.AnswerType=="157610005"){#
+                    <input data-role="datepicker" class="date" type="text" data-bind="dateFormat: DateFormat, value: Value, disabled:IsDisabled" />
+                #}#
+                #if(Question.AnswerType=="157610001"){#
+                    <div>
+		                <ul class="radioButton" data-bind="source: Answers" data-template="radioButton"></ul>                        
+	                </div>
+                #}#
+                #if(Question.AnswerType=="157610002"){#
+                    <div>
+		                <select data-bind="source: Answers, value: SelectedValue, disabled:IsDisabled, events: { change: OnSingleSelectionChanged }"
+			                data-value-field="AnswerOption.Id" data-text-field="AnswerOption.Answer"></select>
+                        <div class="text" data-bind="visible: SelectedItem.IsTextResponseRequired"">     
+                            <span class="invalidField" data-bind="visible: SelectedItem.IsInvalid">*</span>       
+                            <input class="additionalText k-input" type="text" data-bind="value: SelectedItem.AdditionalText, disabled:IsDisabled, visible: SelectedItem.IsTextResponseRequired, events: { change: OnAdditionalTextChanged }" maxlength="500" />                        
+                        </div>		
+	                </div>
+                #}#
+                #if(Question.AnswerType=="157610003"){#
+                    <ul class="checkboxList" data-bind="source: Answers" data-template="checkBox"></ul>
+                #}#
+            </td>
+        #}#
+
+		<!--<td class="rightColumn" data-template="#=Question.AnswerType#" data-bind="source: this"></td>-->
+	</tr>
+</SCRIPT>
+
+<SCRIPT id="radioButton" type="text/x-kendo-template">
+	<li>
+		<label>
+			<input type="radio" data-bind="attr: { name: EntityUniqueId, value: AnswerOption.Id }, disabled:IsDisabled, checked: SelectedValue,
+				events: { change: OnTwoOptionsChanged }"></input>
+			<span data-bind="text: AnswerOption.Answer"></span>            
+		</label>
+		<span class="radioButtonInput">
+			<input type="text" class="radioButtonText text k-input" data-bind="value: AdditionalText, disabled:IsDisabled, visible: IsTextResponseRequired,
+				events: {keyup: EnforceMaxlength}" maxlength="500"/>
+		</span>
+	</li>
+</SCRIPT>
+
+<SCRIPT id="checkBox" type="text/x-kendo-template">
+	<li>
+		<label>
+			<input type="checkbox" data-bind="attr: { name: EntityUniqueId }, value: AnswerOption.Id, checked: IsSelected, 
+                disabled:IsDisabled, events: { change: OnCheckboxOptionsChanged }" />
+			<span data-bind="text: AnswerOption.Answer"></span>            
+		</label>
+		<span class="checkBoxInput">
+			<input type="text" class="checkBoxText k-input" data-bind="value: AdditionalText, visible: IsTextResponseRequiredFlag, disabled:IsDisabled,
+				events: {keyup: EnforceMaxlength}" maxlength="500"/>
+		</span>		
+	</li>
+</SCRIPT>
+</HEAD>
+<BODY>        
+    <div id="surveyBody">
+        <DIV class=theader><DIV class=thleft>Survey Question</DIV><DIV class=thright>Response</DIV></DIV>
+	    <FORM><TABLE><TBODY data-template="row-template" data-bind="source: responsesNew"></TBODY></TABLE></FORM>
+
+        <div id="loadingPanel" class="loading-panel" style="display: none">
+            <label>Loading...</label>
+        </div>  
+
+        <DIV class=messageShow style="display: none" data-bind="attr: { class: userMessage.MessageStyle }, visible: userMessage.IsVisible"><SPAN class=type>&nbsp;</SPAN> 
+		<P data-bind="text: userMessage.Text"></P><SPAN class=close><IMG alt="Close message" src="images/close.png" data-bind="click: CloseMessage"> </SPAN>
+		</DIV>
+    </div>    
+</BODY>
+</HTML>
