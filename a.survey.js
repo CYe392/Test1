@@ -94,8 +94,6 @@ var Fi;
     {
         (function(AnswerType)
         {
-            //new
-            AnswerType[AnswerType["Lookup"] = 157610008] = "Lookup";
             AnswerType[AnswerType["Text"] = 157610000] = "Text";
             AnswerType[AnswerType["TwoOptions"] = 157610001] = "TwoOptions";
             AnswerType[AnswerType["SingleSelection"] = 157610002] = "SingleSelection";
@@ -875,32 +873,6 @@ var Fi;
                 return TwoOptionsQuestionResponse
             })(SingleChoiceQuestionResponse);
         Survey.TwoOptionsQuestionResponse = TwoOptionsQuestionResponse;
-        
-        //New
-        var LookupQuestionResponse = (function(_super){})(MultipleOptionsQuestionResponse);
-        Survey.LookupQuestionResponse = LookupQuestionResponse;
-        var TwoOptionsQuestionResponse = (function(_super)
-            {
-                __extends(TwoOptionsQuestionResponse, _super);
-                function TwoOptionsQuestionResponse()
-                {
-                    _super.apply(this, arguments)
-                }
-                TwoOptionsQuestionResponse.prototype.setQuestion = function(question)
-                {
-                    _super.prototype.setQuestion.call(this, question);
-                    this.setSelection();
-                    this.setAnswersOptionResponses()
-                };
-                TwoOptionsQuestionResponse.prototype.setSelection = function()
-                {
-                    var selectedOption = _.first(this.Answers);
-                    this.setInitialSelection(selectedOption)
-                };
-                return TwoOptionsQuestionResponse
-            })(SingleChoiceQuestionResponse);
-        Survey.TwoOptionsQuestionResponse = TwoOptionsQuestionResponse;
-
         var MultipleSelectionQuestionResponse = (function(_super)
             {
                 __extends(MultipleSelectionQuestionResponse, _super);
@@ -1120,13 +1092,51 @@ var Fi;
                             {
                                 return _this.onQuestionRetrievedNew(questions, handlers)
                             };
+                        /*    
                         var getAnswerOptionsForQuestions = new Fi.Crm.Request("fi_question", onSuccess, onError);
                         var query = "$select=fi_answertype,fi_description,fi_hasseparator,fi_ordernumber,fi_questionId,fi_questiontext" + ",fi_question_fi_answeroption/fi_answer,fi_question_fi_answeroption/fi_answeroptionId,fi_question_fi_answeroption/fi_istextresponserequired, fi_question_fi_answeroption/fi_ordernumber, fi_question_fi_answeroption/fi_textresponsetype" + "&$expand=fi_question_fi_answeroption" + "&$filter=statecode/Value eq 0 and fi_surveyid/Id eq " + Fi.Crm.RequestHelper.GuidToString(this.surveyId);
                         this.service.RetrieveMultiple(getAnswerOptionsForQuestions, query)
+                        */
+                        //IRIS-1725 OData can only pull no more than 50 records in expansition. Switch to FetchXML
+                        var fetchXml = "<fetch version='1.0' output-format='xml-platform' mapping='logical' distinct='false'>"+
+                                            "<entity name='fi_question'>"+
+                                                "<attribute name='fi_answertype' />"+
+                                                "<attribute name='fi_description' />"+
+                                                "<attribute name='fi_hasseparator' />"+
+                                                "<attribute name='fi_ordernumber' />"+
+                                                "<attribute name='fi_questionid' />"+
+                                                "<attribute name='fi_questiontext' />"+
+                                                "<link-entity name='fi_question_fi_answeroption' from='fi_questionid' to='fi_questionid' link-type='outer' alias='qa'>"+
+                                                    "<link-entity name='fi_answeroption' from='fi_answeroptionid' to='fi_answeroptionid' link-type='outer' alias='a'>"+
+                                                        "<attribute name='fi_answer' />"+
+                                                        "<attribute name='fi_answeroptionid' />"+
+                                                        "<attribute name='fi_istextresponserequired' />"+
+                                                        "<attribute name='fi_ordernumber' />"+
+                                                        "<attribute name='fi_textresponsetype' />"+
+                                                    "</link-entity>"+
+                                                "</link-entity>"+
+                                                "<order attribute='fi_ordernumber' descending='false' />"+
+                                                "<filter type='and'>"+
+                                                    "<condition attribute='statecode' operator='eq' value='0' />"+
+                                                    "<condition attribute='fi_surveyid' operator='eq' value='" + this.surveyId +"' />"+
+                                                "</filter>"+
+                                            "</entity>"+
+                                        "</fetch>";
+                                        debugger;
+                        CrmFetchKit.Fetch(fetchXml, true).then(function (rawResult) {
+                            if (rawResult && rawResult.records && rawResult.records.length) {
+                                onSuccess(rawResult.records);
+                            }
+                        },
+                            function (xhr, status, errorThrown) {
+                                var msg = $(xhr.responseText).find('Message').text();
+                                onError("Error fetching questions: " + msg);
+                        });
                     }
                 };
                 SurveyServiceNew.prototype.onQuestionRetrievedNew = function(questions, handlers)
                 {
+                debugger;
                     this.emptyQuestionResponses = this.getEmptyQuestionResponses(questions);
                     if (this.surveyResponseId)
                     {
@@ -1233,9 +1243,6 @@ var Fi;
                         case Survey.AnswerType.MultipleSelection:
                             qr = new Survey.MultipleSelectionQuestionResponse(serverObject);
                             break
-                        //New
-                        case Survey.AnswerType.Lookup:
-                            qr = new Survey.LookupQuestionResponse(serverObject);
                     }
                     qr.Question = serverObject.fi_questionid;
                     return qr
