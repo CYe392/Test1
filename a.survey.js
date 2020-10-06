@@ -1262,6 +1262,33 @@ var Fi;
                         }
                     })
                 };
+            //new
+                SurveyServiceNew.ToQuestion = function(questionGroup)
+                {
+                    var answerType = questionGroup[0].attributes.fi_answertype && questionGroup[0].attributes.fi_answertype.Value;
+                    var questionId = questionGroup[0].Id;
+                    var questionText = questionGroup[0].attributes.fi_questiontext && questionGroup[0].attributes.fi_questiontext.value;
+                    var orderNumber = questionGroup[0].attributes.fi_ordernumber && questionGroup[0].attributes.fi_ordernumber.value;
+                    var description = questionGroup[0].attributes.fi_description && questionGroup[0].attributes.fi_description.value;
+                    var hasSeparator = questionGroup[0].fi_hasseparator && questionGroup[0].fi_hasseparator.value;
+                    var question = new Survey.Question(questionId, questionText, answerType, orderNumber, description, hasSeparator);
+                    var options = _.map(questionGroup, function(questionAnswerOption)
+                        {
+                            var answerOptionId = questionAnswerOption.attributes["a.fi_answeroptionid"] && questionAnswerOption.attributes["a.fi_answeroptionid"].value;
+                            var answer = questionAnswerOption.attributes["a.fi_answer"] && questionAnswerOption.attributes["a.fi_answer"].value;
+                            var isTextResponseRequired = questionAnswerOption.attributes["a.fi_istextresponserequired"] && questionAnswerOption.attributes["a.fi_istextresponserequired"].value;
+                            var orderNumber = questionAnswerOption.attributes["a.fi_ordernumber"] && questionAnswerOption.attributes["a.fi_ordernumber"].value;
+                            var textResponseType = questionAnswerOption.attributes["a.fi_textresponsetype"] && questionAnswerOption.attributes["a.fi_textresponsetype"].value;
+                            return new Survey.AnswerOption(answerOptionId, answer, isTextResponseRequired, orderNumber, textResponseType);
+                        });
+                    options = _.sortBy(options, function(o)
+                    {
+                        return o.OrderNumber
+                    });
+                    question.SetAnswerOptions(options);
+                    return question
+                };
+            /*
                 SurveyServiceNew.ToQuestion = function(serverResult)
                 {
                     var answerType = serverResult.fi_answertype.Value;
@@ -1277,6 +1304,7 @@ var Fi;
                     question.SetAnswerOptions(options);
                     return question
                 };
+                */
                 SurveyServiceNew.prototype.GetQuestionResponses = function(handlers)
                 {
                     var _this = this;
